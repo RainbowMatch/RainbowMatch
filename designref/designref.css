@@ -1,0 +1,50 @@
+body {
+    font-family: 'FreeSans','Helvetica Neue','Helvetica', sans-serif;
+}
+
+h1, h2 {
+    font-weight: 300;
+}
+
+.colourblock {
+    width: 200px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    max-width: 720px;
+}
+
+#img {
+    width: 50%;
+}
+
+.figure {
+    text-align: center;
+    margin: 40px auto;
+    font-weight: 600;
+}
+
+
+.line {
+    border-bottom: 1px solid #aaa;
+}
+
+.colourbox {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.icon {
+    margin: 10px 0px;
+}
+
+.icon span {
+    display: inline-block;
+    width: 40px;
+    font-size: 18pt;
+}
