@@ -3,11 +3,32 @@
   <head>
     <meta charset="utf-8"/>
     <title>Rainbow Match</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div data-role="page" id="splashscreen">
+      <div data-role="main" class="ui-content">
+        <h1>rainbow match</h1>
+      </div>
+    </div>
 
-    <link rel="stylesheet" href="./ext"/>
+    <div data-role="page" id="login">
+      <div data-role="main">
+        
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <p>This is Page Two. If you click on the link below, it will take you to Page One.</p>
+        <a href="#pageone">Go to Page One</a>
+      </div>
+
+      <div data-role="footer">
+        <h1>Footer Text</h1>
+      </div>
+    </div>
+
   </body>
 </html>
