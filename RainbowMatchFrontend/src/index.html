@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <title>Rainbow Match</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <link rel="stylesheet" href="./ext/jqm/jquery.mobile-1.4.5.min.css"/>
   </head>
   <body ng-controller="RainbowMatchController">
     <div data-role="page" id="splashscreen">
@@ -20,21 +20,25 @@
     </div>
     <div data-role="page" id="singup">
       <div data-role="main">
-        <label for="singupusername">Username</label>
-        <input type="text" name="singupusername" id="singupusernameinput">
-        <label for="singuppassword">Password</label>
-        <input type="password" name="singuppassword" id="singuppasswordinput">  
-        <label for="repeatpasswordlabel">Repeate Password</label>
-        <input type="password" name="password" id="passwordinput">  
-        <input type="submit" data-inline="true" value="Sing up">      
-        <input type="submit" data-inline="true" value="Login">
+        <signup-view></signup-view>
+          
+      </div>
+    </div>
+    <div data-role="page" id="home">
+      <div data-role="main">
+        <home-view></home-view>
+          
+      </div>
+    </div>
+    <div data-role="page" id="matches">
+      <div data-role="main">
+        <matches-view></matches-view>
           
       </div>
     </div>
     
     <!-- libraries -->
     <script src="ext/jquery/jquery.min.js"></script>
-    <link rel="stylesheet" href="./ext/jqm/jquery.mobile-1.4.5.min.css"/>
     <script src="ext/jqm/jquery.mobile-1.4.5.min.js"></script>
     <script src="ext/angular/angular.min.js"></script>
 
@@ -43,5 +47,8 @@
     <script src="rbm/rbm.controller.js"></script>
     <script src="rbm/service/httpService.js"></script>
     <script src="rbm/loginView/loginView.component.js"></script>
+    <script src="rbm/signupView/signupView.component.js"></script>
+    <script src="rbm/homeView/homeView.component.js"></script>
+    <script src="rbm/matchesView/matchesView.component.js"></script>
   </body>
 </html>
