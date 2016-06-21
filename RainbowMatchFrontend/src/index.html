@@ -1,33 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="rbm">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Rainbow Match</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Rainbow Match</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  </head>
+  <body>
+    <div data-role="page" id="splashscreen">
+      <div data-role="main" class="ui-content">
+        <h1>rainbow match</h1>
+      </div>
+    </div>
 
-    </head>
-    <body ng-controller="RainbowMatchController">
+    <div data-role="page" id="login">
+      <div data-role="main">
+          <login-view/>
+      </div>
+    </div>
+    <div data-role="page" id="singup">
+      <div data-role="main">
+        <label for="singupusername">Username</label>
+        <input type="text" name="singupusername" id="singupusernameinput">
+        <label for="singuppassword">Password</label>
+        <input type="password" name="singuppassword" id="singuppasswordinput">  
+        <label for="repeatpasswordlabel">Repeate Password</label>
+        <input type="password" name="password" id="passwordinput">  
+        <input type="submit" data-inline="true" value="Sing up">      
+        <input type="submit" data-inline="true" value="Login">
+          
+      </div>
+    </div>
+    
+    <!-- libraries -->
+    <script src="ext/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="./ext/jqm/jquery.mobile-1.4.5.min.css"/>
+    <script src="ext/jqm/jquery.mobile-1.4.5.min.js"></script>
+    <script src="ext/angular/angular.min.js"></script>
 
-        <div data-role="page">
-            <div data-role="header">Hello World</div>
-            <div role="main" class="ui-content">
-                Content
-                <login-view></login-view>
-            </div>
-            <div data-role="footer">Footer</div>
-        </div>
-
-        <!-- libraries -->
-        <script src="ext/jquery/jquery.min.js"></script>
-        <link rel="stylesheet" href="./ext/jqm/jquery.mobile-1.4.5.min.css"/>
-        <script src="ext/jqm/jquery.mobile-1.4.5.min.js"></script>
-        <script src="ext/angular/angular.min.js"></script>
-
-        <!-- application -->
-        <script src="rbm/rbm.js"></script>
-        <script src="rbm/rbm.controller.js"></script>
-        <script src="rbm/service/httpService.js"></script>
-        <script src="rbm/loginView/loginView.component.js"></script>
-
-    </body>
+    <!-- application -->
+    <script src="rbm/rbm.js"></script>
+    <script src="rbm/rbm.controller.js"></script>
+    <script src="rbm/service/httpService.js"></script>
+    <script src="rbm/loginView/loginView.component.js"></script>
+  </body>
 </html>
