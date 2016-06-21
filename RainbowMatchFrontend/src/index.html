@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rainbow Match</title>
-    
-  </head>
-  <body>
-    
-    <div data-role="page">
-      <div data-role="header">Hello World</div>
-      <div role="main" class="ui-content">Content</div>
-      <div data-role="footer">Footer</div>
-    </div>
+<html lang="en" ng-app="rbm">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rainbow Match</title>
 
-    <script src="./ext/jquery/jquery.min.js"></script>
-    <link rel="stylesheet" href="./ext/jqm/jquery.mobile-1.4.5.min.css"/>
-    <script src="./ext/jqm/jquery.mobile-1.4.5.min.js"></script>
-  </body>
+    </head>
+    <body ng-controller="RainbowMatchController">
+
+        <div data-role="page">
+            <div data-role="header">Hello World</div>
+            <div role="main" class="ui-content">
+                Content
+                <login-view></login-view>
+            </div>
+            <div data-role="footer">Footer</div>
+        </div>
+
+        <!-- libraries -->
+        <script src="ext/jquery/jquery.min.js"></script>
+        <link rel="stylesheet" href="./ext/jqm/jquery.mobile-1.4.5.min.css"/>
+        <script src="ext/jqm/jquery.mobile-1.4.5.min.js"></script>
+        <script src="ext/angular/angular.min.js"></script>
+
+        <!-- application -->
+        <script src="rbm/rbm.js"></script>
+        <script src="rbm/rbm.controller.js"></script>
+        <script src="rbm/service/httpService.js"></script>
+        <script src="rbm/loginView/loginView.component.js"></script>
+
+    </body>
 </html>
