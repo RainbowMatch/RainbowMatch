@@ -14,19 +14,19 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @XmlRootElement
-public class Role implements BaseEntity{
+public class Region implements BaseEntity{
 
-    private Long roleId;
-    private String roleName;
+    private Long regionId;
+    private String region;
 	
     @Override
     public String createPersistanceString() {
-	return "INSERT INTO TBAE_ROLE (ROLE_NAME) VALUE('"+roleName+"')";
+    	return "INSERT INTO TBAE_REGION (REGION) VALUE('"+region+"')";
     }
 
     @Override
     public void createFromResultSet(ResultSet rs) throws SQLException {
-	this.roleId = rs.getLong("ROLE_ID");
-	this.roleName = rs.getString("ROLE_NAME");
+    	this.regionId = rs.getLong("REGION_ID");
+    	this.region = rs.getString("REGION");
     }
 }

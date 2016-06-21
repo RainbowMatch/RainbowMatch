@@ -14,19 +14,19 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @XmlRootElement
-public class Role implements BaseEntity{
+public class NonBinaryGender implements BaseEntity{
 
-    private Long roleId;
-    private String roleName;
+    private Long nonBinaryGenderId;
+    private String genderDescription;
 	
     @Override
     public String createPersistanceString() {
-	return "INSERT INTO TBAE_ROLE (ROLE_NAME) VALUE('"+roleName+"')";
+    	return "INSERT INTO TBAE_NON_BINARY_GENDER (GENDER_DESCRIPTION) VALUE('"+genderDescription+"')";
     }
 
     @Override
     public void createFromResultSet(ResultSet rs) throws SQLException {
-	this.roleId = rs.getLong("ROLE_ID");
-	this.roleName = rs.getString("ROLE_NAME");
+    	this.nonBinaryGenderId = rs.getLong("NON_BINARY_GENDER_ID");
+    	this.genderDescription = rs.getString("GENDER_DESCRIPTION");
     }
 }
