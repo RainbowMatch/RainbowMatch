@@ -29,7 +29,4 @@ public class Role implements BaseEntity{
 	this.roleId = rs.getLong("ROLE_ID");
 	this.roleName = rs.getString("ROLE_NAME");
     }
-	
-	
-	
 }
