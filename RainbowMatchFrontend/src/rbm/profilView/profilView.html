@@ -1,4 +1,4 @@
-<div data-role="header">
+<div data-role="header" data-position="fixed">
     <a href="#home" class="ui-btn ui-corner-all ">Back</a> 
     <p class="headtitle">rainbow match - profil</p>
 </div>
@@ -8,12 +8,16 @@
         <input type="password" name="profilpassword" id="profilpasswordinput"/>  
         <label for="profilreenterpasswordinput">Password</label>
         <input type="password" name="profilreenterpassword" id="profilreenterpasswordinput"/>  
-        <label for="profilageinput">Password</label>
-        <input type="password" name="profilage" id="profilageinput"/>
+        <label for="profilplaceinput">Place</label>
+        <input type="text" name="profilplace" id="profilplaceinput"/>
         <label for="profilbirthdayinput">Birthday</label>  
         <input type="Date" placeholder="DD.MM.YYYY" data-inline="true" id="profilbirthdayinput"/>
         <label for="profilgenderinput" >Gender</label>
-        <input name="profilgender" id="profilgenderinput" min="0" max="100"  type="range"/>
+        <input name="profilgender" id="profilgenderinput" min="0" max="100"  type="range"/> 
+        <label>
+        <input name="profilnonbinary" type="checkbox">
+        Non Binary
+        </label>
         <label for="profilselectsexinput">Sexual Orientator</label>
         <select name="profilselectsex" id="profilselectsexinput" data-native-menu="false">
             <option value="choose-one" data-placeholder="true" data-iconpos="left">Choose one...</option>
