@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import ch.patrickguenthard.entity.inf.BaseEntity;
+import ch.patrickguenthard.entity.inf.DeletableEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,7 +15,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User implements BaseEntity{
+public class User implements DeletableEntity{
 	
     private Long userId;
     private String userName;
@@ -36,5 +37,13 @@ public class User implements BaseEntity{
 	this.userPassword = rs.getString("USER_PASSWORD");
 		
     }
+
+	@Override
+	public String createDeleteString() {
+		if(userId == null){
+			throw new NullPointerException();
+		}
+		return "DELETE FROM TBAE_USER WHERE USER_ID = "+ userId;
+	}
 
 }
