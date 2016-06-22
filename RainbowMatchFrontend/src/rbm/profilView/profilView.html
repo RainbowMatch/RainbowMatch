@@ -1,8 +1,27 @@
-<form>
-    <label for="usernamelabel">Username</label>
-    <input type="text" name="username" id="usernameinput">
-    <label for="passwordlabel">Password</label>
-    <input type="password" name="password" id="passwordinput">  
-    <input type="submit" data-inline="true" value="Sing up">      
-    <input type="submit" data-inline="true" value="Login">
-</form>
+<div data-role="header">
+    <a href="#home" class="ui-btn ui-corner-all ">Back</a> 
+</div>
+<div data-role="main">
+    <form>
+        <label for="profilpasswordinput">Password</label>
+        <input type="password" name="profilpassword" id="profilpasswordinput"/>  
+        <label for="profilreenterpasswordinput">Password</label>
+        <input type="password" name="profilreenterpassword" id="profilreenterpasswordinput"/>  
+        <label for="profilageinput">Password</label>
+        <input type="" name="profilage" id="profilageinput"/>
+        <label for="profilbirthdayinput">Birthday</label>  
+        <input type="Date" placeholder="DD.MM.YYYY" data-inline="true" id="profilbirthdayinput"/>
+        <label for="profilgenderinput" >Gender</label>
+        <input name="profilgender" id="profilgenderinput" min="0" max="100"  type="range"/>
+        <label for="profilselectsexinput">Sexual Orientator</label>
+        <select name="profilselectsex" id="profilselectsexinput" data-native-menu="false">
+            <option value="choose-one" data-placeholder="true" data-iconpos="left">Choose one...</option>
+            <option value="1">Hetereosexual</option>
+            <option value="2">Homosexual</option>
+            <option value="3">Bisexual</option>
+            <option value="4">Pansexual</option>
+            <option value="5">Asexual</option>
+        </select>
+        <input type="submit" data-inline="true" value="Save"/> 
+    </form>
+</div>
