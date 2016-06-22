@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>130</x>
+      <y>100</y>
+      <w>930</w>
+      <h>790</h>
+    </coordinates>
+    <panel_attributes>Rainbow Match App</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
