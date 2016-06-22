@@ -1,5 +1,6 @@
 <div data-role="header">
     <a href="#home" class="ui-btn ui-corner-all ">Back</a> 
+    <p class="headtitle">rainbow match - profil</p>
 </div>
 <div data-role="main">
     <form>
@@ -8,7 +9,7 @@
         <label for="profilreenterpasswordinput">Password</label>
         <input type="password" name="profilreenterpassword" id="profilreenterpasswordinput"/>  
         <label for="profilageinput">Password</label>
-        <input type="" name="profilage" id="profilageinput"/>
+        <input type="password" name="profilage" id="profilageinput"/>
         <label for="profilbirthdayinput">Birthday</label>  
         <input type="Date" placeholder="DD.MM.YYYY" data-inline="true" id="profilbirthdayinput"/>
         <label for="profilgenderinput" >Gender</label>
@@ -21,6 +22,13 @@
             <option value="3">Bisexual</option>
             <option value="4">Pansexual</option>
             <option value="5">Asexual</option>
+        </select>
+        <label for="select-custom-1">Basic:</label>
+        <select name="select-custom-1" id="select-custom-1" data-native-menu="false">
+            <option value="#ff0000">Red</option>
+            <option value="#00ff00">Green</option>
+            <option value="#0000ff">Blue</option>
+            <option value="#ff00ff">Purple</option>
         </select>
         <input type="submit" data-inline="true" value="Save"/> 
     </form>
