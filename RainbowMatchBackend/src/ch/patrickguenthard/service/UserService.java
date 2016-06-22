@@ -19,4 +19,5 @@ public interface UserService {
      * throws IncorrectLoginException if password doesn't match username
      */
     public Long checkUser(User user) throws UserException;
+    public void deleteUser(User user);
 }

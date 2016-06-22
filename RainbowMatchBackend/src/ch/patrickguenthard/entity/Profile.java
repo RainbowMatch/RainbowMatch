@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import ch.patrickguenthard.entity.inf.BaseEntity;
+import ch.patrickguenthard.entity.inf.UpdatableEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,7 +15,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @XmlRootElement
-public class Profile implements BaseEntity{
+public class Profile implements UpdatableEntity{
 
     private Long profileId;
     private Long userId;
@@ -27,9 +28,24 @@ public class Profile implements BaseEntity{
     @Override
     public String createPersistanceString() {
     	return "INSERT INTO TBAE_PROFILE (USER_ID, GENDER, NON_BINARY_GENDER, "
-    			+ "NON_BINARY_GENDER_ID, BIOGRAPHY,PROFILE_IMAGE) "
+    			+ "NON_BINARY_GENDER_ID, BIOGRAPHY,PROFILE_PICTURE) "
     			+ "VALUE("+userId+", "+gender+"," + (nonBinaryGender ? 1 : 0)
     			+ ", " + nonBinaryGenderId +", '"+biography+"','"+profilePicture+"')";
+    }
+    
+    @Override
+    public String createUpdateString() {
+    	if(profileId == null){
+    		throw new NullPointerException();
+    	}
+    	String str = "UPDATE TBAE_PROFILE SET USER_ID = "+userId+", "
+    			+ "GENDER = " + gender + ","
+    			+" NON_BINARY_GENDER = " + nonBinaryGender + ", "
+    			+ "NON_BINARY_GENDER_ID = "+nonBinaryGenderId+","
+    			+ "BIOGRAPHY = " + biography + ","
+    			+ "PROFILE_PICTURE = " + profilePicture + ","
+    			+ "WHERE PROFILE_ID = " + profileId;
+		return str;
     }
 
     @Override

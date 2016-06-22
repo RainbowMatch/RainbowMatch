@@ -59,4 +59,10 @@ public class UserServiceImpl implements UserService{
 	}
 	return null;
     }
+
+	@Override
+	public void deleteUser(User user) {
+		// TODO Auto-generated method stub
+		
+	}
 }
