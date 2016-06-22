@@ -1,10 +1,10 @@
 <div data-role="main">
     <form>
         <label for="loginusernameinput">Username</label>
-        <input type="text" ng-model="$ctrl.userName" name="loginusername" id="loginusernameinput"/>
+        <input type="text" ng-model="$ctrl.user.userName" name="loginusername" id="loginusernameinput"/>
         <label for="loginpasswordinput">Password</label>
-        <input type="password" name="loginpassword" id="loginpasswordinput"/>  
-        <input type="button" data-inline="true" value="Sign up"/>      
-        <input type="button" data-inline="true" value="Login"/>
+        <input type="password" ng-model="$ctrl.user.userPassword" name="loginpassword" id="loginpasswordinput"/>  
+        <a href="#signup" class="ui-btn ui-corner-all ">Sign up</a>      
+        <input type="button" ng-click="$ctrl." data-inline="true" value="Login"/>
     </form>
 </div>

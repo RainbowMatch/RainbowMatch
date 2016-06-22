@@ -1,10 +1,19 @@
 (function() {
 
-    function LoginViewController (){
+    function LoginViewController (HttpService){
         var vm = this;
-
-        vm.userName = "User";
+        vm.user = {
+            userName : "",
+            userPassword : ""
+        };
+        
+        vm.login = function(){
+            HttpService.post("10.4.57.190:20080/backend/users/login",vm.user, function(event){
+                alert(event);
+            });
+        }
     }
+    
 
 
     angular.module("rbm").component("loginView", {

@@ -2,7 +2,10 @@
 
     function SignupViewController (){
         var vm = this;
-
+        vm.user = {
+            userName : "",
+            userPassword : ""
+        }
         vm.userName = "User";
     }
 
