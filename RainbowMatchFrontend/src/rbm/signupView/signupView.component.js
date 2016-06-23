@@ -12,16 +12,16 @@
             repassword = vm.user.userPassword === vm.userRepassword;
         }
         vm.signup = function(){
-            if(repassword){
+           /* if(repassword){
                 localStorage.username = vm.user.username;
                 window.location.href = "#home";
             }else{
                 alert("password not the same!");
             }
-            
+            */
             if(repassword){
 
-                HttpService.post("http://localhost:20080/Backend/api/users/user",vm.user,  function(event){
+                HttpService.post("http://k-keller.com:4080/Backend/api/users/user",vm.user,  function(event){
                     if(event.status==200){
                         localStorage.username = vm.user.username;
                         window.location.href = "#home";
