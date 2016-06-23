@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'FreeSans';
+    src: url('FreeSans.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreeSans';
+    src: url('FreeSansOblique.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'FreeSans';
+    src: url('FreeSansBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FreeSans';
+    src: url('FreeSansBoldOblique.ttf');
+    font-weight: 600;
+    font-style: italic;
+}
