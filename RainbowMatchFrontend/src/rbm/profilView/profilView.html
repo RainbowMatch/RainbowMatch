@@ -7,19 +7,19 @@
         <label for="profilpasswordinput">Password</label>
         <input type="password" name="profilpassword" id="profilpasswordinput"/>  
         <label for="profilreenterpasswordinput">Password</label>
-        <input type="password" name="profilreenterpassword" id="profilreenterpasswordinput"/>  
+        <input type="password" name="profilreenterpassword" ng-model="$ctrl.profilRepassword" ng-change="$ctrl.repassword()" id="profilreenterpasswordinput"/>  
         <label for="profilplaceinput">Place</label>
-        <input type="text" name="profilplace" id="profilplaceinput"/>
+        <input type="text" name="profilplace" ng-model="$ctrl.profil.place" id="profilplaceinput"/>
         <label for="profilbirthdayinput">Birthday</label>  
-        <input type="Date" placeholder="DD.MM.YYYY" data-inline="true" id="profilbirthdayinput"/>
+        <input type="Date" placeholder="DD.MM.YYYY" ng-model="$ctrl.profil.birthday" data-inline="true" id="profilbirthdayinput"/>
         <label for="profilgenderinput" >Gender</label>
-        <input name="profilgender" id="profilgenderinput" min="0" max="100"  type="range"/> 
+        <input name="profilgender" id="profilgenderinput" ng-model="$ctrl.profil.gender" min="0" max="100" value="50"  type="range"/> 
         <label>
-        <input name="profilnonbinary" type="checkbox">
+        <input name="profilnonbinary" ng-model="$ctrl.profil.binary" type="checkbox">
         Non Binary
         </label>
         <label for="profilselectsexinput">Sexual Orientator</label>
-        <select name="profilselectsex" id="profilselectsexinput" data-native-menu="false">
+        <select name="profilselectsex" id="profilselectsexinput" ng-model="$ctrl.profil.sexuality" data-native-menu="false">
             <option value="choose-one" data-placeholder="true" data-iconpos="left">Choose one...</option>
             <option value="1">Androsexual(attracted to males, men, and/or masculinity)</option>
             <option value="2">Gynesexual(attracted to females, women, and/or femininity)</option>
@@ -27,13 +27,13 @@
             <option value="4">Pansexual(attracted to all people, regardless of biological sex, gender identity, or expression)</option>
             <option value="5">Asexual(no sexual attraction, but often romantic or spiritual attractions exist)</option>
         </select>
-        <label for="select-custom-1">Basic:</label>
-        <select name="select-custom-1" id="select-custom-1" data-native-menu="false">
+        <label for="profilcolorinput">Basic:</label>
+        <select name="profilcolor" id="profilcolorinput" ng-model="$ctrl.profil.color" data-native-menu="false">
             <option value="#ff0000">Red</option>
             <option value="#00ff00">Green</option>
             <option value="#0000ff">Blue</option>
             <option value="#ff00ff">Purple</option>
         </select>
-        <input type="submit" data-inline="true" value="Save"/> 
+        <input type="button" ng-click="$ctrl.save()" data-inline="true" value="Save"/> 
     </form>
 </div>
