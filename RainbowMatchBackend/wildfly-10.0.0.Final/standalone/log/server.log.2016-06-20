@@ -1,0 +1,500 @@
+2016-06-20 08:54:05,353 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.1.Final
+2016-06-20 08:54:05,906 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-06-20 08:54:06,002 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 10.0.0.Final (WildFly Core 2.0.10.Final) starting
+2016-06-20 08:54:06,004 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\opt\wildfly-10.0.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_51\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_51\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_51
+	java.io.tmpdir = C:\Users\Patrick\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_51\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_51/bin/server;C:/Program Files/Java/jre1.8.0_51/bin;C:/Program Files/Java/jre1.8.0_51/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\Patrick\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Microsoft Emulator Manager\1.0\;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;C:\Program Files (x86)\nodejs\;C:\Program Files\TortoiseSVN\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Windows Live\Shared;C:\Users\Patrick\AppData\Local\Programs\Python\Python35\Scripts\;C:\Users\Patrick\AppData\Local\Programs\Python\Python35\;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Patrick\AppData\Roaming\npm;C:\Users\Patrick\node_modues;C:\Users\Patrick\Desktop\DATA\apps\emacs\bin;C:\Program Files (x86)\sqlite-tools\;C:\Program Files (x86)\Git\bin;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Users\Patrick\AppData\Local\atom\bin;C:\Program Files\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_51-b16
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_51
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.51-b03
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\opt\wildfly-10.0.0.Final
+	jboss.host.name = patrick-hp
+	jboss.modules.dir = C:\opt\wildfly-10.0.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = patrick-hp
+	jboss.qualified.host.name = patrick-hp
+	jboss.server.base.dir = C:\opt\wildfly-10.0.0.Final\standalone
+	jboss.server.config.dir = C:\opt\wildfly-10.0.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\opt\wildfly-10.0.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\opt\wildfly-10.0.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\opt\wildfly-10.0.0.Final\standalone\log
+	jboss.server.name = patrick-hp
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\opt\wildfly-10.0.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/opt/wildfly-10.0.0.Final/standalone/configuration/logging.properties
+	module.path = C:/opt/wildfly-10.0.0.Final/modules
+	org.jboss.boot.log.file = C:/opt/wildfly-10.0.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 8.1
+	os.version = 6.3
+	path.separator = ;
+	program.name = JBossTools: WildFly 10.0
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_51\lib\resources.jar;C:\Program Files\Java\jre1.8.0_51\lib\rt.jar;C:\Program Files\Java\jre1.8.0_51\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_51\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_51\lib\jce.jar;C:\Program Files\Java\jre1.8.0_51\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_51\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_51\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_51\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/opt/wildfly-10.0.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\opt\wildfly-10.0.0.Final\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.country.format = CH
+	user.dir = C:\opt\wildfly-10.0.0.Final\bin
+	user.home = C:\Users\Patrick
+	user.language = en
+	user.language.format = de
+	user.name = Patrick
+	user.script = 
+	user.timezone = Europe/Berlin
+	user.variant = 
+2016-06-20 08:54:06,008 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 10.0 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/opt/wildfly-10.0.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/opt/wildfly-10.0.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/opt/wildfly-10.0.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=Cp1252 -Xmx2G 
+2016-06-20 08:54:08,260 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment Backend.war
+2016-06-20 08:54:08,306 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment lombok.jar
+2016-06-20 08:54:08,309 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment mysql-connector-java-5.1.39-bin.jar
+2016-06-20 08:54:08,328 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment Backend
+2016-06-20 08:54:08,371 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found Backend.war in deployment directory. To trigger deployment create a file called Backend.war.dodeploy
+2016-06-20 08:54:08,372 ERROR [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0011: The deployment scanner found a directory named META-INF that was not inside a directory whose name ends with .ear, .jar, .rar, .sar or .war. This is likely the result of unzipping an archive directly inside the C:\opt\wildfly-10.0.0.Final\standalone\deployments directory, which is a user error. The META-INF directory will not be scanned for deployments, but it is possible that the scanner may find other files from the unzipped archive and attempt to deploy them, leading to errors.
+2016-06-20 08:54:08,372 ERROR [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0011: The deployment scanner found a directory named WEB-INF that was not inside a directory whose name ends with .ear, .jar, .rar, .sar or .war. This is likely the result of unzipping an archive directly inside the C:\opt\wildfly-10.0.0.Final\standalone\deployments directory, which is a user error. The WEB-INF directory will not be scanned for deployments, but it is possible that the scanner may find other files from the unzipped archive and attempt to deploy them, leading to errors.
+2016-06-20 08:54:08,874 ERROR [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 20) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "Backend.war")]) - failure description: "WFLYCTL0212: Duplicate resource [(\"deployment\" => \"Backend.war\")]"
+2016-06-20 08:54:08,878 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) "WFLYCTL0193: Failed executing subsystem deployment-scanner boot operations"
+2016-06-20 08:54:08,882 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("parallel-subsystem-boot") failed - address: ([]) - failure description: "\"WFLYCTL0193: Failed executing subsystem deployment-scanner boot operations\""
+2016-06-20 08:54:08,887 FATAL [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0056: Server boot has failed in an unrecoverable manner; exiting. See previous messages for details.
+2016-06-20 08:54:08,891 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2016-06-20 08:54:08,918 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0050: WildFly Full 10.0.0.Final (WildFly Core 2.0.10.Final) stopped in 10ms
+2016-06-20 08:57:58,987 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.1.Final
+2016-06-20 08:57:59,372 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-06-20 08:57:59,456 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 10.0.0.Final (WildFly Core 2.0.10.Final) starting
+2016-06-20 08:57:59,458 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\opt\wildfly-10.0.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jre1.8.0_51\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jre1.8.0_51\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jre1.8.0_51
+	java.io.tmpdir = C:\Users\Patrick\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jre1.8.0_51\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;native;C:/Program Files/Java/jre1.8.0_51/bin/server;C:/Program Files/Java/jre1.8.0_51/bin;C:/Program Files/Java/jre1.8.0_51/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Brackets\command;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\Patrick\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Microsoft Emulator Manager\1.0\;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;C:\Program Files (x86)\nodejs\;C:\Program Files\TortoiseSVN\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Windows Live\Shared;C:\Users\Patrick\AppData\Local\Programs\Python\Python35\Scripts\;C:\Users\Patrick\AppData\Local\Programs\Python\Python35\;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Patrick\AppData\Roaming\npm;C:\Users\Patrick\node_modues;C:\Users\Patrick\Desktop\DATA\apps\emacs\bin;C:\Program Files (x86)\sqlite-tools\;C:\Program Files (x86)\Git\bin;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Users\Patrick\AppData\Local\atom\bin;C:\Program Files\eclipse;;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_51-b16
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_51
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.51-b03
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\opt\wildfly-10.0.0.Final
+	jboss.host.name = patrick-hp
+	jboss.modules.dir = C:\opt\wildfly-10.0.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = patrick-hp
+	jboss.qualified.host.name = patrick-hp
+	jboss.server.base.dir = C:\opt\wildfly-10.0.0.Final\standalone
+	jboss.server.config.dir = C:\opt\wildfly-10.0.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\opt\wildfly-10.0.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\opt\wildfly-10.0.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\opt\wildfly-10.0.0.Final\standalone\log
+	jboss.server.name = patrick-hp
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\opt\wildfly-10.0.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:/C:/opt/wildfly-10.0.0.Final/standalone/configuration/logging.properties
+	module.path = C:/opt/wildfly-10.0.0.Final/modules
+	org.jboss.boot.log.file = C:/opt/wildfly-10.0.0.Final/standalone/log/boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Windows 8.1
+	os.version = 6.3
+	path.separator = ;
+	program.name = JBossTools: WildFly 10.0
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jre1.8.0_51\lib\resources.jar;C:\Program Files\Java\jre1.8.0_51\lib\rt.jar;C:\Program Files\Java\jre1.8.0_51\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_51\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_51\lib\jce.jar;C:\Program Files\Java\jre1.8.0_51\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_51\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_51\classes
+	sun.boot.library.path = C:\Program Files\Java\jre1.8.0_51\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:/opt/wildfly-10.0.0.Final/modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\opt\wildfly-10.0.0.Final\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = US
+	user.country.format = CH
+	user.dir = C:\opt\wildfly-10.0.0.Final\bin
+	user.home = C:\Users\Patrick
+	user.language = en
+	user.language.format = de
+	user.name = Patrick
+	user.script = 
+	user.timezone = Europe/Berlin
+	user.variant = 
+2016-06-20 08:57:59,459 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -Dprogram.name=JBossTools: WildFly 10.0 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:/opt/wildfly-10.0.0.Final/standalone/log/boot.log -Dlogging.configuration=file:/C:/opt/wildfly-10.0.0.Final/standalone/configuration/logging.properties -Djboss.home.dir=C:/opt/wildfly-10.0.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=Cp1252 -Xmx2G 
+2016-06-20 08:58:01,373 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-06-20 08:58:01,401 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.3.4.Final
+2016-06-20 08:58:01,413 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.3.4.Final
+2016-06-20 08:58:01,521 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-06-20 08:58:01,558 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-06-20 08:58:01,576 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-06-20 08:58:01,578 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2016-06-20 08:58:01,583 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2016-06-20 08:58:01,585 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2016-06-20 08:58:01,592 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=4.9.4.Final
+2016-06-20 08:58:01,595 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-06-20 08:58:01,655 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.2.Final)
+2016-06-20 08:58:01,865 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 4.0.18.Final
+2016-06-20 08:58:01,913 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2016-06-20 08:58:01,914 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-2) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-06-20 08:58:01,995 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-06-20 08:58:02,000 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-06-20 08:58:02,116 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0003: Undertow 1.3.15.Final starting
+2016-06-20 08:58:02,118 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 1.3.15.Final starting
+2016-06-20 08:58:02,168 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2016-06-20 08:58:02,169 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2016-06-20 08:58:02,653 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path 'C:\opt\wildfly-10.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2016-06-20 08:58:02,668 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0012: Started server default-server.
+2016-06-20 08:58:02,675 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2016-06-20 08:58:03,092 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:20080
+2016-06-20 08:58:03,643 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory C:\opt\wildfly-10.0.0.Final\standalone\deployments
+2016-06-20 08:58:03,674 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "Backend.war" (runtime-name: "Backend.war")
+2016-06-20 08:58:04,135 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-3) ISPN000128: Infinispan version: Infinispan 'Mahou' 8.1.0.Final
+2016-06-20 08:58:04,137 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-06-20 08:58:05,806 INFO  [org.jboss.ws.common.management] (MSC service thread 1-8) JBWS022052: Starting JBossWS 5.1.3.Final (Apache CXF 3.1.4) 
+2016-06-20 08:58:07,959 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.jdbc.Driver (version 5.1)
+2016-06-20 08:58:07,961 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0005: Deploying non-JDBC-compliant driver class com.mysql.fabric.jdbc.FabricMySQLDriver (version 5.1)
+2016-06-20 08:58:07,997 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = Backend.war_com.mysql.fabric.jdbc.FabricMySQLDriver_5_1
+2016-06-20 08:58:07,999 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0018: Started Driver service with driver-name = Backend.war_com.mysql.jdbc.Driver_5_1
+2016-06-20 08:58:09,143 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0021: Registered web context: /Backend
+2016-06-20 08:58:09,268 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "Backend.war" (runtime-name : "Backend.war")
+2016-06-20 08:58:09,502 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2016-06-20 08:58:09,502 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2016-06-20 08:58:09,503 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.0.0.Final (WildFly Core 2.0.10.Final) started in 11018ms - Started 346 of 637 services (382 services are lazy, passive or on-demand)
+2016-06-20 08:58:11,262 ERROR [io.undertow.request] (default task-15) UT005023: Exception handling request to /Backend/api/users/users: java.lang.RuntimeException: RESTEASY003325: Failed to construct public ch.patrickguenthard.rest.BackendApplication()
+	at org.jboss.resteasy.core.ConstructorInjectorImpl.construct(ConstructorInjectorImpl.java:162)
+	at org.jboss.resteasy.spi.ResteasyProviderFactory.createProviderInstance(ResteasyProviderFactory.java:2209)
+	at org.jboss.resteasy.spi.ResteasyDeployment.createApplication(ResteasyDeployment.java:299)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.init(ServletContainerDispatcher.java:96)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.init(HttpServletDispatcher.java:36)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:117)
+	at org.wildfly.extension.undertow.security.RunAsLifecycleInterceptor.init(RunAsLifecycleInterceptor.java:78)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:103)
+	at io.undertow.servlet.core.ManagedServlet$DefaultInstanceStrategy.start(ManagedServlet.java:231)
+	at io.undertow.servlet.core.ManagedServlet.getServlet(ManagedServlet.java:170)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	classname cannot be resolved or is not a field
+	classname cannot be resolved to a variable
+
+	at ch.patrickguenthard.util.logger.Logger.<init>(Logger.java:8)
+	at ch.patrickguenthard.service.UserServiceImpl.<init>(UserServiceImpl.java:20)
+	at ch.patrickguenthard.service.LoginServiceImpl.<init>(LoginServiceImpl.java:23)
+	at ch.patrickguenthard.rest.UserRestService.<init>(UserRestService.java:33)
+	at ch.patrickguenthard.rest.BackendApplication.<init>(BackendApplication.java:15)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.jboss.resteasy.core.ConstructorInjectorImpl.construct(ConstructorInjectorImpl.java:150)
+	... 36 more
+
+2016-06-20 08:58:12,783 ERROR [io.undertow.request] (default task-17) UT005023: Exception handling request to /Backend/api/users/users: java.lang.RuntimeException: RESTEASY003325: Failed to construct public ch.patrickguenthard.rest.BackendApplication()
+	at org.jboss.resteasy.core.ConstructorInjectorImpl.construct(ConstructorInjectorImpl.java:162)
+	at org.jboss.resteasy.spi.ResteasyProviderFactory.createProviderInstance(ResteasyProviderFactory.java:2209)
+	at org.jboss.resteasy.spi.ResteasyDeployment.createApplication(ResteasyDeployment.java:299)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.init(ServletContainerDispatcher.java:96)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.init(HttpServletDispatcher.java:36)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:117)
+	at org.wildfly.extension.undertow.security.RunAsLifecycleInterceptor.init(RunAsLifecycleInterceptor.java:78)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:103)
+	at io.undertow.servlet.core.ManagedServlet$DefaultInstanceStrategy.start(ManagedServlet.java:231)
+	at io.undertow.servlet.core.ManagedServlet.getServlet(ManagedServlet.java:170)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	classname cannot be resolved or is not a field
+	classname cannot be resolved to a variable
+
+	at ch.patrickguenthard.util.logger.Logger.<init>(Logger.java:8)
+	at ch.patrickguenthard.service.UserServiceImpl.<init>(UserServiceImpl.java:20)
+	at ch.patrickguenthard.service.LoginServiceImpl.<init>(LoginServiceImpl.java:23)
+	at ch.patrickguenthard.rest.UserRestService.<init>(UserRestService.java:33)
+	at ch.patrickguenthard.rest.BackendApplication.<init>(BackendApplication.java:15)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.jboss.resteasy.core.ConstructorInjectorImpl.construct(ConstructorInjectorImpl.java:150)
+	... 36 more
+
+2016-06-20 08:58:24,366 ERROR [io.undertow.request] (default task-23) UT005023: Exception handling request to /Backend/api/users/users: java.lang.RuntimeException: RESTEASY003325: Failed to construct public ch.patrickguenthard.rest.BackendApplication()
+	at org.jboss.resteasy.core.ConstructorInjectorImpl.construct(ConstructorInjectorImpl.java:162)
+	at org.jboss.resteasy.spi.ResteasyProviderFactory.createProviderInstance(ResteasyProviderFactory.java:2209)
+	at org.jboss.resteasy.spi.ResteasyDeployment.createApplication(ResteasyDeployment.java:299)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.init(ServletContainerDispatcher.java:96)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.init(HttpServletDispatcher.java:36)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:117)
+	at org.wildfly.extension.undertow.security.RunAsLifecycleInterceptor.init(RunAsLifecycleInterceptor.java:78)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:103)
+	at io.undertow.servlet.core.ManagedServlet$DefaultInstanceStrategy.start(ManagedServlet.java:231)
+	at io.undertow.servlet.core.ManagedServlet.getServlet(ManagedServlet.java:170)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	classname cannot be resolved or is not a field
+	classname cannot be resolved to a variable
+
+	at ch.patrickguenthard.util.logger.Logger.<init>(Logger.java:8)
+	at ch.patrickguenthard.service.UserServiceImpl.<init>(UserServiceImpl.java:20)
+	at ch.patrickguenthard.service.LoginServiceImpl.<init>(LoginServiceImpl.java:23)
+	at ch.patrickguenthard.rest.UserRestService.<init>(UserRestService.java:33)
+	at ch.patrickguenthard.rest.BackendApplication.<init>(BackendApplication.java:15)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.jboss.resteasy.core.ConstructorInjectorImpl.construct(ConstructorInjectorImpl.java:150)
+	... 36 more
+
+2016-06-20 08:58:53,878 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "Backend" (runtime-name: "Backend")
+2016-06-20 08:58:53,920 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-6) HV000001: Hibernate Validator 5.2.3.Final
+2016-06-20 08:58:54,020 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service jboss.deployment.unit.Backend.POST_MODULE: org.jboss.msc.service.StartException in service jboss.deployment.unit.Backend.POST_MODULE: WFLYSRV0153: Failed to process phase POST_MODULE of deployment "Backend"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:154)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.jboss.msc.service.DuplicateServiceException: Service jboss.naming.context.java.module.Backend.Backend is already registered
+	at org.jboss.msc.service.ServiceRegistrationImpl.setInstance(ServiceRegistrationImpl.java:158)
+	at org.jboss.msc.service.ServiceControllerImpl.startInstallation(ServiceControllerImpl.java:235)
+	at org.jboss.msc.service.ServiceContainerImpl.install(ServiceContainerImpl.java:768)
+	at org.jboss.msc.service.ServiceTargetImpl.install(ServiceTargetImpl.java:223)
+	at org.jboss.msc.service.ServiceControllerImpl$ChildServiceTarget.install(ServiceControllerImpl.java:2401)
+	at org.jboss.msc.service.ServiceTargetImpl.install(ServiceTargetImpl.java:223)
+	at org.jboss.msc.service.ServiceControllerImpl$ChildServiceTarget.install(ServiceControllerImpl.java:2401)
+	at org.jboss.msc.service.ServiceBuilderImpl.install(ServiceBuilderImpl.java:317)
+	at org.jboss.as.ee.naming.ModuleContextProcessor.deploy(ModuleContextProcessor.java:74)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:147)
+	... 5 more
+
+2016-06-20 08:58:54,024 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "Backend")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.Backend.POST_MODULE" => "org.jboss.msc.service.StartException in service jboss.deployment.unit.Backend.POST_MODULE: WFLYSRV0153: Failed to process phase POST_MODULE of deployment \"Backend\"
+    Caused by: org.jboss.msc.service.DuplicateServiceException: Service jboss.naming.context.java.module.Backend.Backend is already registered"}}
+2016-06-20 08:58:54,118 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0010: Deployed "Backend" (runtime-name : "Backend")
+2016-06-20 08:58:54,119 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit.Backend.POST_MODULE: org.jboss.msc.service.StartException in service jboss.deployment.unit.Backend.POST_MODULE: WFLYSRV0153: Failed to process phase POST_MODULE of deployment "Backend"
+
+2016-06-20 10:11:25,682 ERROR [io.undertow.request] (default task-24) UT005023: Exception handling request to /Backend/api/users/login: java.lang.RuntimeException: RESTEASY003325: Failed to construct public ch.patrickguenthard.rest.BackendApplication()
+	at org.jboss.resteasy.core.ConstructorInjectorImpl.construct(ConstructorInjectorImpl.java:162)
+	at org.jboss.resteasy.spi.ResteasyProviderFactory.createProviderInstance(ResteasyProviderFactory.java:2209)
+	at org.jboss.resteasy.spi.ResteasyDeployment.createApplication(ResteasyDeployment.java:299)
+	at org.jboss.resteasy.plugins.server.servlet.ServletContainerDispatcher.init(ServletContainerDispatcher.java:96)
+	at org.jboss.resteasy.plugins.server.servlet.HttpServletDispatcher.init(HttpServletDispatcher.java:36)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:117)
+	at org.wildfly.extension.undertow.security.RunAsLifecycleInterceptor.init(RunAsLifecycleInterceptor.java:78)
+	at io.undertow.servlet.core.LifecyleInterceptorInvocation.proceed(LifecyleInterceptorInvocation.java:103)
+	at io.undertow.servlet.core.ManagedServlet$DefaultInstanceStrategy.start(ManagedServlet.java:231)
+	at io.undertow.servlet.core.ManagedServlet.getServlet(ManagedServlet.java:170)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:131)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:284)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:263)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:81)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:174)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:202)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:793)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	classname cannot be resolved or is not a field
+	classname cannot be resolved to a variable
+
+	at ch.patrickguenthard.util.logger.Logger.<init>(Logger.java:8)
+	at ch.patrickguenthard.service.UserServiceImpl.<init>(UserServiceImpl.java:20)
+	at ch.patrickguenthard.service.LoginServiceImpl.<init>(LoginServiceImpl.java:23)
+	at ch.patrickguenthard.rest.UserRestService.<init>(UserRestService.java:33)
+	at ch.patrickguenthard.rest.BackendApplication.<init>(BackendApplication.java:15)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.jboss.resteasy.core.ConstructorInjectorImpl.construct(ConstructorInjectorImpl.java:150)
+	... 36 more
+
+2016-06-20 10:16:10,355 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 65) WFLYDR0009: Content C:\opt\wildfly-10.0.0.Final\standalone\data\content\2c\e9de13f277ec1600e7e04231477e3e5f59d317 is obsolete and will be removed
+2016-06-20 10:16:10,361 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 65) WFLYDR0002: Content removed from location C:\opt\wildfly-10.0.0.Final\standalone\data\content\2c\e9de13f277ec1600e7e04231477e3e5f59d317\content
+2016-06-20 10:16:10,362 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 65) WFLYDR0009: Content C:\opt\wildfly-10.0.0.Final\standalone\data\content\3a\b47e0f358f83fa29c2b3ba8106c0cc016e1198 is obsolete and will be removed
+2016-06-20 10:16:10,365 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 65) WFLYDR0002: Content removed from location C:\opt\wildfly-10.0.0.Final\standalone\data\content\3a\b47e0f358f83fa29c2b3ba8106c0cc016e1198\content
