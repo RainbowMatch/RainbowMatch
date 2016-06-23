@@ -1,3 +1,9 @@
+body {
+    font-family: 'FreeSans', 'Helvetica Neue', 'HelveticaNeue', 'Helvetica', 'Nimbus Sans L', Arial;
+    text-shadow: none;
+}
+
+
 #home{
 	background-color:#506EA2;
 }
