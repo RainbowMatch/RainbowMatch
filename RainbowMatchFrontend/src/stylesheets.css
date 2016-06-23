@@ -31,6 +31,13 @@ body {
 	background-color:#506EA2;
 }
 
+#rainbowTitle{
+	transform: rotate(270deg);
+	position:fixed;
+
+}
+
+
 
 /* -----
 SVG Icon Matches

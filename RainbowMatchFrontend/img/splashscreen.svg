@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1080"
+   height="1920"
+   viewBox="0 0 1080 1920"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="splashscreen.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.175"
+     inkscape:cx="-23.142887"
+     inkscape:cy="856.55135"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1440"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,867.63779)">
+    <rect
+       style="fill:#7c1616;fill-opacity:1;stroke:none;stroke-width:1.60000002;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect4136"
+       height="1920"
+       x="0"
+       y="-867.63782"
+       width="180" />
+    <rect
+       style="fill:#d5682f;fill-opacity:1;stroke:none;stroke-width:1.60000002;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect4136-7"
+       height="1920"
+       x="180"
+       y="-867.63782"
+       width="180" />
+    <rect
+       style="fill:#e7e567;fill-opacity:1;stroke:none;stroke-width:1.60000002;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect4136-7-6"
+       height="1920"
+       x="360"
+       y="-867.63782"
+       width="180" />
+    <rect
+       style="fill:#549972;fill-opacity:1;stroke:none;stroke-width:1.60000002;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect4136-7-6-5"
+       height="1920"
+       x="540"
+       y="-867.63782"
+       width="180" />
+    <rect
+       style="fill:#506ea2;fill-opacity:1;stroke:none;stroke-width:1.60000002;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect4136-7-6-5-9"
+       height="1920"
+       x="720"
+       y="-867.63782"
+       width="180" />
+    <rect
+       style="fill:#2e1e4d;fill-opacity:1;stroke:none;stroke-width:1.60000002;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect4136-7-6-5-9-9"
+       height="1920"
+       x="900"
+       y="-867.63782"
+       width="180" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4223"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       transform="matrix(1.0002482,0,0,1,8.4235523,-689.7162)"><flowRegion
+         id="flowRegion4225"><rect
+           id="rect4227"
+           width="1058.6399"
+           height="513.15747"
+           x="12.121831"
+           y="699.73572" /></flowRegion><flowPara
+         id="flowPara4229"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:150px;font-family:FreeSans;-inkscape-font-specification:'FreeSans Bold';fill:#ffffff;fill-opacity:1">rainbow match</flowPara></flowRoot>  </g>
+</svg>
