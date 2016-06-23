@@ -3,7 +3,6 @@
     function HomeViewController (){
         var vm = this;
         
-        vm.userName = "User";
     }
 
 

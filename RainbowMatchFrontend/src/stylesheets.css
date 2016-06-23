@@ -32,12 +32,23 @@ body {
 }
 
 #rainbowTitle{
-	transform: rotate(270deg);
 	position:fixed;
-
+    left: 3;
+    bottom: 3px;
 }
 
+#rainbowTitle img {
+    height: 200px;
+}
 
+.ui-header {
+    text-align: center;
+}
+
+[data-role=page] {
+    padding: 2%;
+    width: 96% !important;
+}
 
 /* -----
 SVG Icon Matches

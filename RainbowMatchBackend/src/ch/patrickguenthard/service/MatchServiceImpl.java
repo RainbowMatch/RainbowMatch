@@ -13,13 +13,13 @@ public class MatchServiceImpl implements MatchService {
 	private DataAccessManager<Match> dam = new DataAccessManager<>(DataAccessConnectionInitiator.getInstance().getConnection());
 	
 	@Override
-	public List<Match> listRequestedByUser(User usr) {
-		return dam.searchValues("SELECT * FROM TBAE_MATCH WHERE APPROVED = 1 AND REQUEST_USER_ID = "+usr.getUserId(), Match.class);
+	public List<Match> listRequestedByUser(Long usr) {
+		return dam.searchValues("SELECT * FROM TBAE_MATCH WHERE APPROVED = 1 AND REQUEST_USER_ID = "+usr, Match.class);
 	}
 
 	@Override
-	public List<Match> listApprovesByUser(User usr) {
-		return dam.searchValues("SELECT * FROM TBAE_MATCH WHERE APPROVED = 1 AND MATCHED_USER_ID = "+usr.getUserId(), Match.class);
+	public List<Match> listApprovesByUser(Long usr) {
+		return dam.searchValues("SELECT * FROM TBAE_MATCH WHERE APPROVED = 1 AND MATCHED_USER_ID = "+usr, Match.class);
 	}
 
 	@Override

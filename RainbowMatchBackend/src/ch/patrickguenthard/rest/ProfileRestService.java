@@ -8,11 +8,15 @@ import javax.ws.rs.Produces;
 
 import ch.patrickguenthard.entity.NonBinaryGender;
 import ch.patrickguenthard.entity.Profile;
+import ch.patrickguenthard.entity.Region;
 import ch.patrickguenthard.entity.SexualOrientation;
+import ch.patrickguenthard.exceptions.UnsupportedException;
 import ch.patrickguenthard.service.NonBinaryGenderService;
 import ch.patrickguenthard.service.NonBinaryGenderServiceImpl;
 import ch.patrickguenthard.service.ProfileService;
 import ch.patrickguenthard.service.ProfileServiceImpl;
+import ch.patrickguenthard.service.RegionService;
+import ch.patrickguenthard.service.RegionServiceImpl;
 import ch.patrickguenthard.service.SexualOrientationService;
 import ch.patrickguenthard.service.SexualOrientationServiceImpl;
 
@@ -24,11 +28,13 @@ public class ProfileRestService {
 	private ProfileService profileService;
 	private NonBinaryGenderService nbgService;
 	private SexualOrientationService soService;
+	private RegionService regionService;
 	
     public ProfileRestService() {
     	profileService = new ProfileServiceImpl();
     	nbgService = new NonBinaryGenderServiceImpl();
     	soService = new SexualOrientationServiceImpl();
+    	regionService = new RegionServiceImpl();
 	}
     
     @GET
@@ -49,5 +55,11 @@ public class ProfileRestService {
     	return soService.searchAllSexualOrientation();
     }
     
+    
+    @GET
+    @Path("regions/all")
+    public List<Region> searchAllRegion() {
+    	return regionService.searchAllRegion()	;
+    }
     
 }

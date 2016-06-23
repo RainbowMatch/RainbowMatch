@@ -2,24 +2,29 @@
 
     function MatchesViewController (HttpService){
         var vm = this;
-        vm.users = function(){
-            //TODO getusers from backend
-            //wenn kei verbindig möglich, denn vom lokalstorage lade
-            //DUMMY
-            return [{
-                userName : "Noah",
-                profilePicture : "C:\Users\Noah Siegrist\Documents\GitHub\RainbowMatchFrontend\RainbowMatchFrontend\doc\storyboard.png",
-                request : function(){
-                    //todo request profile
-                    HttpService.get("10.4.57.190:20080/backend/users/user", function(event){
-                        return event;
-                
+        var vm.matches = [];
+        var vm.currentMatch = 0;
+        
+        vm.loadMatches = function() {
+            HttpService.get(RainbowMatch.baseUrl + "api/users/users", function(data){
+                for(var i in data.data) {
+                    var usr = data.data[i]
+                    HttpService.get(RainbowMatch.baseUrl + "api/profile/info/" + usr.userId, function(data){
+                        usr.profile = data.data;
+                        vm.matches.push(usr);
                     });
                 }
-                }];
+            });
         };
-            
+        
+        vm.requestApproval = function() {
+        
         }
+        
+        vm.loadMatches();
+
+            
+     
     }
 
 

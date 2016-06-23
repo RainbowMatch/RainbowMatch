@@ -6,8 +6,8 @@ import ch.patrickguenthard.entity.Match;
 import ch.patrickguenthard.entity.User;
 
 public interface MatchService {
-	public List<Match> listRequestedByUser(User usr);
-	public List<Match> listApprovesByUser(User usr);
+	public List<Match> listRequestedByUser(Long userId);
+	public List<Match> listApprovesByUser(Long userId);
 	public Match searchById(Long id);
 	public void approveMatch(Match match);
 	public void addMatch(Match match);

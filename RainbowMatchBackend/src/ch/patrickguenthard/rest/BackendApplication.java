@@ -14,6 +14,7 @@ public class BackendApplication  extends Application
         this.singletons.add(new ExampleRest());
         this.singletons.add(new UserRestService());
         this.singletons.add(new ProfileRestService());
+        this.singletons.add(new MatchRestService());
     }
  
     public Set<Class<?>> getClasses() {
