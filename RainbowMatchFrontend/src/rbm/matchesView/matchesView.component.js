@@ -1,6 +1,6 @@
 (function() {
 
-    function MatchesViewController (){
+    function MatchesViewController (HttpService){
         var vm = this;
         vm.users = function(){
             //TODO getusers from backend
