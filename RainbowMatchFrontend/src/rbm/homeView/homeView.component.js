@@ -1,4 +1,4 @@
-(function() {
+ (function() {
 
     function HomeViewController (){
         var vm = this;

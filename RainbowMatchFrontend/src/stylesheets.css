@@ -3,7 +3,6 @@ body {
     text-shadow: none;
 }
 
-
 #home{
 	background-color:#506EA2;
 }
@@ -30,4 +29,66 @@ body {
 
 #approved{
 	background-color:#506EA2;
+}
+
+
+/* -----
+SVG Icon Matches
+----- */
+
+.svg-icon {
+  width: 4em;
+  height: 4em;
+    position: center;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #FFFFFF;
+}
+
+.svg-icon circle {
+  stroke: 	#FFFFFF;
+  stroke-width: 1;
+    }
+
+/* -----
+SVG Icons Profile
+----- */
+
+.svg-icon-prof {
+  width: 4em;
+  height: 4em;
+}
+
+.svg-icon-prof path,
+.svg-icon-prof polygon,
+.svg-icon-prof rect {
+  fill: #FFFFFF;
+}
+
+.svg-icon-prof circle {
+  stroke: #FFFFFF;
+  stroke-width: 1;
+}
+
+/* -----
+SVG Icons Requests and Approvals
+----- */
+
+.svg-icon-req {
+  width: 4em;
+  height: 4em;
+}
+
+.svg-icon-req path,
+.svg-icon-req polygon,
+.svg-icon-req rect {
+  fill: #FFFFFF;
+}
+
+.svg-icon-req circle {
+  stroke: #FFFFFF;
+  stroke-width: 1;
 }
