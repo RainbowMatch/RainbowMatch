@@ -4,13 +4,11 @@
 </div>
 
 <div data-role="main">
-    <div class="swipeable">
+    <div class="swipeable" ng-repeate="p in $ctrl.users">
         <div class="avatarbackground colorofprofile" data-position="fixed">
-            <img src="" alt="Avatar"/>
+            <img src="p.profilePicture" alt="Avatar"/>
         </div>
-        <p id="usernameMatches"></p>
-        <p id="ageMatches"></p>
-        <p id="locationMatches"></p>
-        <input type="button" id="requestInfos" value="Request infos"/>
+        <p id="usernameMatches">{{p.userName}}</p>
+        <input type="button" ng-click="p.request()" id="requestInfos" value="Request infos"/>
     </div>
 </div>
