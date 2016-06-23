@@ -1,6 +1,6 @@
-(function() {
+(function () {
 
-    function LoginViewController (HttpService){
+    function LoginViewController(HttpService) {
         var vm = this;
         vm.user = {
             userName : "",
@@ -8,10 +8,22 @@
         };
         
         vm.login = function(){
-            HttpService.post("10.4.57.190:20080/backend/users/login",vm.user, function(event){
-                alert(event);
+            localStorage.username = vm.user.username;
+            window.location.href = "#home";
+            
+            
+            HttpService.post("10.4.57.190:20080/backend/users/login",vm.user,  function(event){
+                if(event.id==null){
+                    localStorage.username = vm.user.username;
+                     window.location.href = "#home";
+                    return false;
+                }else{
+                    alert("error");
+                }
+                
             });
         }
+        
     }
     
 

@@ -5,12 +5,12 @@
 <div data-role="main">
     <form>
         <label for="singupusernameinput">Username</label>
-        <input type="text" name="singupusername" id="singupusernameinput"/>
+        <input type="text" name="singupusername" ng-model="$ctrl.user.userName" id="singupusernameinput"/>
         <label for="singuppasswordinput">Password</label>
-        <input type="password" name="singuppassword" id="singuppasswordinput"/>  
+        <input type="password" name="singuppassword" ng-model="$ctrl.user.userPassword" id="singuppasswordinput"/>  
         <label for="singuprepeatpasswordinput">Repeate Password</label>
-        <input type="password" name="singuprepeatpassword" id="singuprepeatpasswordinput"/>  
-        <input type="button" data-inline="true" value="Sign up"/> 
+        <input type="password" ng-model="$ctrl.userRepassword" ng-change="$ctrl.repassword()" name="singuprepeatpassword" id="singuprepeatpasswordinput"/>  
+        <input type="button" ng-click="$ctrl.signup()" data-inline="true" value="Sign up"/> 
 
     </form>
 </div>
