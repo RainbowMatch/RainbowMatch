@@ -8,10 +8,10 @@
         };
         
         vm.login = function(){
-            HttpService.post("10.4.57.190:20080/backend/users/login",vm.user, function(event){
-                alert(event);
+            HttpService.post("http://localhost:20080/backend/users/login/",vm.user, function(event){
+                console.log(event);//10.4.57.190
             });
-        }
+        };
     }
     
 

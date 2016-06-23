@@ -3,6 +3,7 @@ import java.util.List;
 
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
+import javax.ws.rs.OPTIONS;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -54,11 +55,18 @@ public class UserRestService {
     @POST
     @Path("login")
     public Response login(User usr) throws UserException {
+    
     	Response resp = Response.status(200)
     			.entity(new LoginResponse("Login Successful",userService.checkUser(usr)))
-    			.header("Access-Control-Allow-Origin", "*").build();
+    			.header("Access-Control-Allow-Origin", "*")
+    			.header("Access-Control-Allow-Headers", "origin, content-type, accept, authorization")
+                .header("Access-Control-Allow-Credentials", "true")
+                .header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, HEAD")
+                .header("Access-Control-Max-Age", "1209600")
+                .build();
     	
     	return resp;
     }
+    
    
 }
