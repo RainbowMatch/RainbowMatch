@@ -5,7 +5,7 @@
 <div data-role="main">
     <form>
         <label for="profilpasswordinput">Password</label>
-        <input type="password" name="profilpassword" id="profilpasswordinput"/>  
+        <input type="password" name="profilpassword" ng-model="$ctrl.profil.password" id="profilpasswordinput"/>  
         <label for="profilreenterpasswordinput">Password</label>
         <input type="password" name="profilreenterpassword" ng-model="$ctrl.profilRepassword" ng-change="$ctrl.repassword()" id="profilreenterpasswordinput"/>  
         <label for="profilplaceinput">Place</label>

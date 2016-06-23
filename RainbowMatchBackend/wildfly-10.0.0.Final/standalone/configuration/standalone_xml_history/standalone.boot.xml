@@ -358,9 +358,9 @@
                     <filter-ref name="server-header"/>
                     <filter-ref name="x-powered-by-header"/>
                     <filter-ref name="access-control-allow-origin-header"/>
-		    <filter-ref name="access-control-allow-method-header"/>
-		    <filter-ref name="access-control-allow-headers-header"/>
-		</host>
+                    <filter-ref name="access-control-allow-method-header"/>
+                    <filter-ref name="access-control-allow-headers-header"/>
+                </host>
             </server>
             <servlet-container name="default">
                 <jsp-config/>
@@ -373,9 +373,9 @@
                 <response-header name="server-header" header-name="Server" header-value="WildFly/10"/>
                 <response-header name="x-powered-by-header" header-name="X-Powered-By" header-value="Undertow/1"/>
                 <response-header name="access-control-allow-origin-header" header-name="Access-Control-Allow-Origin" header-value="*"/>
-		<response-header name="access-control-allow-method-header" header-name="Access-Control-Allow-Methods" header-value="OPTIONS, TRACE, GET, HEAD, POST, PUT"/>
-		<response-header name="access-control-allow-headers-header" header-name="Access-Control-Allow-Headers" header-value="Content-Type, Authorization, Accept, X-Requested-With"/>
-	    </filters>
+                <response-header name="access-control-allow-method-header" header-name="Access-Control-Allow-Methods" header-value="OPTIONS, TRACE, GET, HEAD, POST, PUT"/>
+                <response-header name="access-control-allow-headers-header" header-name="Access-Control-Allow-Headers" header-value="Content-Type, Authorization, Accept, X-Requested-With"/>
+            </filters>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:webservices:2.0">
             <wsdl-host>${jboss.bind.address:127.0.0.1}</wsdl-host>
@@ -414,7 +414,7 @@
 
     <deployments>
         <deployment name="Backend.war" runtime-name="Backend.war">
-            <content sha1="ea96d3cb615e7edd89bde06ce557a1fe5e955d3a"/>
+            <content sha1="30116da3ea186d11a53076784dcf014b91e54ae0"/>
         </deployment>
     </deployments>
 </server>
