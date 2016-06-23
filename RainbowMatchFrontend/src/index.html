@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="rbm">
-  <head>
-    <meta charset="utf-8"/>
-       <link rel="stylesheet" href="stylesheets.css">
-    <title>Rainbow Match</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./ext/jqm/jquery.mobile-1.4.5.min.css"/>
-  </head>
-  <body ng-controller="RainbowMatchController">
-    <div data-role="page" id="splashscreen">
-      <div data-role="main" class="ui-content">
-        <h1>rainbow match</h1>
-      </div>
-    </div>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Rainbow Match</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./ext/jqm/jquery.mobile-1.4.5.min.css"/>
+        <link rel="stylesheet" href="./ext/fonts/freesans/fonts.css"/>
+        <link rel="stylesheet" href="stylesheets.css">
+    </head>
+    <body ng-controller="RainbowMatchController">
+        <div data-role="page" id="splashscreen">
+            <div data-role="main" class="ui-content">
+                <h1>rainbow match</h1>
+            </div>
+        </div>
 
-    <div data-role="page" id="login">
-          <login-view></login-view>
-    </div>
-    <div data-role="page" id="signup">
-        <signup-view></signup-view>
-    </div>
-    <div data-role="page" id="home">
-        <home-view></home-view>
-    </div>
-    <div data-role="page" id="matches">
-        <matches-view></matches-view>
-    </div>
-    <div data-role="page" id="profil">
-        <profil-view></profil-view>
-    </div>   
-    <div data-role="page" id="requests">
-        <request-view></request-view>
-    </div> 
-    <div data-role="page" id="approved">
-        <aproved-view></aproved-view>
-    </div>
-   
-    
-    <!-- libraries -->
-    <script src="ext/jquery/jquery.min.js"></script>
-    <script src="ext/jqm/jquery.mobile-1.4.5.min.js"></script>
-    <script src="ext/angular/angular.min.js"></script>
+        <div data-role="page" id="login">
+            <login-view></login-view>
+        </div>
+        <div data-role="page" id="signup">
+            <signup-view></signup-view>
+        </div>
+        <div data-role="page" id="home">
+            <home-view></home-view>
+        </div>
+        <div data-role="page" id="matches">
+            <matches-view></matches-view>
+        </div>
+        <div data-role="page" id="profil">
+            <profil-view></profil-view>
+        </div>   
+        <div data-role="page" id="requests">
+            <request-view></request-view>
+        </div> 
+        <div data-role="page" id="approved">
+            <aproved-view></aproved-view>
+        </div>
 
-    <!-- application -->
-    <script src="rbm/rbm.js"></script>
-    <script src="rbm/rbm.controller.js"></script>
-    <script src="rbm/service/httpService.js"></script>
-    <script src="rbm/loginView/loginView.component.js"></script>
-    <script src="rbm/signupView/signupView.component.js"></script>
-    <script src="rbm/homeView/homeView.component.js"></script>
-    <script src="rbm/matchesView/matchesView.component.js"></script>
-    <script src="rbm/profilView/profilView.component.js"></script>
-    <script src="rbm/requestView/requestView.component.js"></script>
-    <script src="rbm/aprovedView/aprovedView.component.js"></script>
-  </body>
+
+        <!-- libraries -->
+        <script src="ext/jquery/jquery.min.js"></script>
+        <script src="ext/jqm/jquery.mobile-1.4.5.min.js"></script>
+        <script src="ext/angular/angular.min.js"></script>
+
+        <!-- application -->
+        <script src="rbm/rbm.js"></script>
+        <script src="rbm/rbm.controller.js"></script>
+        <script src="rbm/service/httpService.js"></script>
+        <script src="rbm/loginView/loginView.component.js"></script>
+        <script src="rbm/signupView/signupView.component.js"></script>
+        <script src="rbm/homeView/homeView.component.js"></script>
+        <script src="rbm/matchesView/matchesView.component.js"></script>
+        <script src="rbm/profilView/profilView.component.js"></script>
+        <script src="rbm/requestView/requestView.component.js"></script>
+        <script src="rbm/aprovedView/aprovedView.component.js"></script>
+    </body>
 </html>

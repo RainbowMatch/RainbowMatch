@@ -1,7 +1,7 @@
 angular.module("rbm").controller("RainbowMatchController", function(){
     if(localStorage.userName == undefined){
-         window.location.href = "#login";
+        jQuery.mobile.navigate("#home");
     }else{
-        window.location.href = "#home";
+        jQuery.mobile.navigate("#home");
     }
 });
