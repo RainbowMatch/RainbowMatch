@@ -11,20 +11,20 @@
         </ul>
             </div>
         <div id="subrequests" class="ui-body-d ui-content">
-            <div ng-repeat="p in $ctrl.users">
-                <img src="{{p}}" alt="Avatar"/>
-                <p class="userlistname">{{p}}</p>
-                <input type="button" data-inline="true" value="<3"/> 
-                <input type="button" data-inline="true" value="X"/> 
+            <div ng-repeat="p in $ctrl.requestedUsers">
+                <img src="p.profilePicture" alt="Avatar"/>
+                <p class="userlistname">{{p.userName}}</p>
+                <input type="button" ng-click="p.accept()" data-inline="true" value="<3"/> 
+                <input type="button" ng-click="p.delete()" data-inline="true" value="X"/> 
             </div>  
         </div>
         <div id="subaproved">
-            <a href="#aproved">
-                <div ng-repeat="p in $ctrl.users">
-                    <img src="{{p}}" alt="Avatar"/>
-                    <p class="userlistname">{{p}}</p>
+            <button ng-click="p.reqeuest()">
+                <div ng-repeat="p in $ctrl.aptrovedUsers">
+                    <img src="p.profilePicture" alt="Avatar"/>
+                    <p class="userlistname">{{p.userName}}</p>
                 </div>
-            </a>    
+            </button>    
         </div>
     </div>
 </div>

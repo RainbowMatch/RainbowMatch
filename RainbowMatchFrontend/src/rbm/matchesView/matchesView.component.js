@@ -11,13 +11,14 @@
                 profilePicture : "C:\Users\Noah Siegrist\Documents\GitHub\RainbowMatchFrontend\RainbowMatchFrontend\doc\storyboard.png",
                 request : function(){
                     //todo request profile
-            }
-                }];
-        }
-            HttpService.get("10.4.57.190:20080/backend/users/user", function(event){
-                return event;
+                    HttpService.get("10.4.57.190:20080/backend/users/user", function(event){
+                        return event;
                 
-            });
+                    });
+                }
+                }];
+        };
+            
         }
     }
 
