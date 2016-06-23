@@ -3,7 +3,6 @@
     function RequestViewController (){
         var vm = this;
 
-        vm.userName = "User";
         vm.users = ["Peter", "Patrick", "Zoe"];
         
     }

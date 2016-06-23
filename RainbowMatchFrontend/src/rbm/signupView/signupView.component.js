@@ -14,11 +14,15 @@
             }
         }
         vm.signup = function(){
+            //#################################################
             if(repassword){
                 localStorage.username = vm.user.username;
             }else{
                 alert("password not the same!");
             }
+            //##################################################
+            
+            
             if(repassword){
                 HttpService.post("http://localhost:20080/Backend/api/users/user",vm.user,  function(event){
                     if(event.status==200){
@@ -28,7 +32,6 @@
                     }else{
                         alert("error");
                     }
-
                 });
             }else{
                 alert("password not the same!");
