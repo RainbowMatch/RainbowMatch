@@ -1,5 +1,5 @@
 (function() {
-    function LoginViewController (HttpService){
+    function LoginViewController (HttpService) {
         var vm = this;
         vm.user = {
             userName : "",

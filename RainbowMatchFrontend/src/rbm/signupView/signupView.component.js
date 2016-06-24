@@ -20,7 +20,7 @@
                     HttpService.post(RainbowMatch.baseUrl+"api/users/user",vm.user,  function(event){
                         if(event.status==200){
                             localStorage.username = vm.user.username;
-                            window.location.href = "#home";
+                            jQuery.mobile.navigate("#home");
                             return false;
                         }else{
                             alert("error");
