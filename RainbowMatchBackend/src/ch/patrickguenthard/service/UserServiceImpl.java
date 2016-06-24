@@ -18,7 +18,6 @@ import ch.patrickguenthard.exceptions.UserException;
 public class UserServiceImpl implements UserService{
 
     private DataAccessManager<User> dam;
-    private Logger LOG = new Logger(UserServiceImpl.class.getName());
     private ProfileService profileService;
     
     
@@ -42,7 +41,10 @@ public class UserServiceImpl implements UserService{
 		prof.setNonBinaryGender(false);
 		prof.setNonBinaryGenderId(-1L);
 		prof.setProfilePicture("");
+		System.out.println(prof);
 		profileService.addProfile(prof);
+
+
     }
 	
     @Override

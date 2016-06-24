@@ -22,7 +22,7 @@ public class ProfileServiceImpl implements ProfileService {
 
 	@Override
 	public void addProfile(Profile prof) throws UnsupportedException {
-		dam.persist(prof);
+		System.out.println("profile id" + dam.persist(prof));
 	}
 
 	@Override

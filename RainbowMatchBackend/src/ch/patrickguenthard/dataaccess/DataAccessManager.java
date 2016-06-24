@@ -24,7 +24,7 @@ public class DataAccessManager<E extends BaseEntity> {
     public Long persist(E obj) throws UnsupportedException{
 	try {
 		PreparedStatement statement = conn.prepareStatement(obj.createPersistanceString(), new String[] {"USER_ID"});
-		statement.executeQuery();
+		statement.executeUpdate();
 		
 		ResultSet generatedKeys = statement.getGeneratedKeys();
 		if (null != generatedKeys && generatedKeys.next()) {
