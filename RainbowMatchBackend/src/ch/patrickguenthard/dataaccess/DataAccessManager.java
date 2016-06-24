@@ -1,6 +1,7 @@
 package ch.patrickguenthard.dataaccess;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -20,15 +21,22 @@ public class DataAccessManager<E extends BaseEntity> {
 	this.conn = conn;
     }
 	
-    public boolean persist(E obj) throws UnsupportedException{
+    public Long persist(E obj) throws UnsupportedException{
 	try {
-	    Statement stmt = conn.createStatement();
-	    stmt.executeUpdate(obj.createPersistanceString());
+		PreparedStatement statement = conn.prepareStatement(obj.createPersistanceString(), new String[] {"USER_ID"});
+		statement.executeQuery();
+		
+		ResultSet generatedKeys = statement.getGeneratedKeys();
+		if (null != generatedKeys && generatedKeys.next()) {
+		     return generatedKeys.getLong(1);
+		}
+	    //Statement stmt = conn.createStatement();
+	    //stmt.executeUpdate(obj.createPersistanceString());
 	} catch (SQLException e) {
 	    e.printStackTrace();
-	    return false;
+	    return -1L;
 	}
-	return true;
+	return -1L;
     }
     
     public boolean update(E obj) throws UnsupportedException {
