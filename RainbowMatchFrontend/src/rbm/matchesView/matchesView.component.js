@@ -47,12 +47,6 @@
 
                     vm.nextMatch();
                 }
-            } else {
-                if ( yDiff > 0 ) {
-                    /* up swipe */
-                } else {
-                    /* down swipe */
-                }
             }
             /* reset values */
             xDown = null;

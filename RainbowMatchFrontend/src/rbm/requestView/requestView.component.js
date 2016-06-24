@@ -38,11 +38,10 @@
                 profilePicture : "C:\Users\Noah Siegrist\Documents\GitHub\RainbowMatchFrontend\RainbowMatchFrontend\doc\storyboard.png",
                 request : function(){
                     //todo request profile
-                    HttpService.get(string.concat(RainbowMatch.baseUrl, "/backend/users/user"), function(event){
-                        return event;
-                
-                    });
+                    localStorage.viewedUser = "Noah";
+                    jQuery.mobile.navigate("#approved");
                 }
+                
                 }];
         };
     }

@@ -19,12 +19,13 @@
             </div>  
         </div>
         <div id="subaproved">
-            <button ng-click="p.reqeuest()">
+            <a ng-click="p.reqeuest()">
                 <div ng-repeat="p in $ctrl.aptrovedUsers">
                     <img src="p.profilePicture" alt="Avatar"/>
                     <p class="userlistname">{{p.userName}}</p>
+                    <button ng-click="p.reqeuest()" >View</button>
                 </div>
-            </button>    
+            </a>    
         </div>
     </div>
 </div>
