@@ -1,14 +1,15 @@
 <div data-role="header" data-position="fixed">
-    <a href="#home" class="ui-btn ui-corner-all "><span class="genericon genericon-previous"></span></a> 
+    <a href="#home" class="ui-btn ui-corner-all "><span class="genericon genericon-previous"></span></a>
     <p class="headtitle" style="position:center;">rainbow match - matches</p>
 </div>
 
 <div data-role="main">
-    <div class="swipeable" ng-repeate="p in $ctrl.matches">
+    <div ng-show="$index == $ctrl.currentMatch" ng-repeat="p in $ctrl.matches">
         <div class="avatarbackground colorofprofile" data-position="fixed">
-            <img src="p.profilePicture" alt="Avatar"/>
+            <img style="width: 256px;" src="img/profile.png" alt="Avatar"/>
         </div>
-        <p id="usernameMatches">{{p.userName}}</p>
+        <p style="text-align: center;" id="usernameMatches">{{p.userName}}</p>
         <input type="button" ng-click="p.request()" id="requestInfos" value="Request infos"/>
     </div>
+    <button ng-click="$ctrl.nextMatch();">next</button>
 </div>

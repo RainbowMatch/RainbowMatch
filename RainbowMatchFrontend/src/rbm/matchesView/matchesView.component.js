@@ -4,7 +4,7 @@
         var vm = this;
         vm.matches = [];
         vm.currentMatch = 0;
-        
+
         vm.loadMatches = function() {
             console.log(RainbowMatch.baseUrl + "api/users/users");
             HttpService.get(RainbowMatch.baseUrl + "api/users/users", function(data){
@@ -17,15 +17,21 @@
                 }
             });
         };
-        
-        vm.requestApproval = function() {
-            
-        }
-        
+
+        vm.nextMatch = function() {
+          if(vm.currentMatch < vm.matches -1) {
+            vm.currentMatch++;
+          } else {
+            vm.currentMatch = 0;
+          }
+
+        };
+
+
         vm.loadMatches();
 
-            
-     
+
+
     }
 
 
