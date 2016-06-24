@@ -1,5 +1,5 @@
 (function() {
-    function LoginViewController (HttpService){
+    function LoginViewController (HttpService) {
         var vm = this;
         vm.user = {
             userName : "",
@@ -13,7 +13,7 @@
             //##################################
 
 
-            HttpService.post("http://k-keller.com:4080/Backend/api/users/login/",vm.user, function(event){
+            HttpService.post(string.concat(RainbowMatch.baseUrl, "/Backend/api/users/login/"), vm.user, function(event){
 
 
                 console.log(event);//10.4.57.190
