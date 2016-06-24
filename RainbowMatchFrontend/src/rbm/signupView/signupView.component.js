@@ -17,7 +17,7 @@
             }else{
                 if(repassword){
 
-                    HttpService.post(string.concat(RainbowMatch.baseUrl, "/Backend/api/users/user"),vm.user,  function(event){
+                    HttpService.post(RainbowMatch.baseUrl+"api/users/user",vm.user,  function(event){
                         if(event.status==200){
                             localStorage.username = vm.user.username;
                             jQuery.mobile.navigate("#home");
@@ -29,9 +29,9 @@
                 }else{
                     alert("password not the same!");
                 }
-            }   
+            }
         }
-        
+
     }
 
 
