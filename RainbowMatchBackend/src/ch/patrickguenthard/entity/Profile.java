@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 import ch.patrickguenthard.entity.inf.BaseEntity;
 import ch.patrickguenthard.entity.inf.UpdatableEntity;
+import ch.patrickguenthard.service.ProfileService;
+import ch.patrickguenthard.service.ProfileServiceImpl;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -35,8 +37,10 @@ public class Profile implements UpdatableEntity{
     
     @Override
     public String createUpdateString() {
+    	ProfileService prs = new ProfileServiceImpl();
     	if(profileId == null){
-    		throw new NullPointerException();
+    		profileId = prs.getProfileByUser(userId).getProfileId();
+    		//throw new NullPointerException();
     	}
     	String str = "UPDATE TBAE_PROFILE SET USER_ID = "+userId+", "
     			+ "GENDER = " + gender + ","

@@ -2,6 +2,7 @@ package ch.patrickguenthard.rest;
 import java.util.List;
 
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -41,6 +42,13 @@ public class ProfileRestService {
     @Path("info/{userid}")
     public Profile userInfo(@PathParam("userid") Long userid){
     	return profileService.getProfileByUser(userid);
+    }
+    
+    @POST
+    @Path("update/")
+    public Profile updateProfile(Profile pr) throws UnsupportedException {
+    	profileService.updateProfile(pr);
+    	return pr;
     }
     
     @GET
