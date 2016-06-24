@@ -12,27 +12,24 @@
             repassword = vm.user.userPassword === vm.userRepassword;
         }
         vm.signup = function(){
-           /* if(repassword){
-                localStorage.username = vm.user.username;
-                window.location.href = "#home";
+            if(vm.user.userName.length < 2){
+                alert("Username at least 2 characters long!");
             }else{
-                alert("password not the same!");
-            }
-            */
-            if(repassword){
+                if(repassword){
 
-                HttpService.post("http://k-keller.com:4080/Backend/api/users/user",vm.user,  function(event){
-                    if(event.status==200){
-                        localStorage.username = vm.user.username;
-                        window.location.href = "#home";
-                        return false;
-                    }else{
-                        alert("error");
-                    }
-                });
-            }else{
-                alert("password not the same!");
-            }
+                    HttpService.post("http://k-keller.com:4080/Backend/api/users/user",vm.user,  function(event){
+                        if(event.status==200){
+                            localStorage.username = vm.user.username;
+                            window.location.href = "#home";
+                            return false;
+                        }else{
+                            alert("error");
+                        }
+                    });
+                }else{
+                    alert("password not the same!");
+                }
+            }   
         }
         
     }
