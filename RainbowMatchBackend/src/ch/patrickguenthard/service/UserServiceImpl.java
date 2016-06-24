@@ -49,8 +49,9 @@ public class UserServiceImpl implements UserService{
 	    throw new UserNotFoundException();
 	}
 	try {
+		System.out.println(HashingUtil.SHAsum(user.getUserPassword().getBytes()) + ", " + singleUser.getUserPassword());
 	    if(singleUser.getUserPassword().equals(HashingUtil.SHAsum(user.getUserPassword().getBytes()))) {
-		return singleUser.getUserId();
+	    	return singleUser.getUserId();
 	    } else {
 		throw new IncorrectLoginException();
 	    }

@@ -1,33 +1,24 @@
-body {
-    font-family: 'FreeSans', 'Helvetica Neue', 'HelveticaNeue', 'Helvetica', 'Nimbus Sans L', Arial;
-    text-shadow: none;
+* {
+    text-shadow: none !important;
+
 }
 
-#home{
-	background-color:#506EA2;
-}
 
-#signup{
-	background-color:#506EA2;
-}
-
-#login{
-	background-color:#506EA2;
-}
-
-#matches{
-	background-color:#506EA2;
-}
-
+<<<<<<< HEAD
 #profil{
 	background-color:#506EA2;
+=======
+body {
+    font-family: 'FreeSans', 'Helvetica Neue', 'HelveticaNeue', 'Helvetica', 'Nimbus Sans L', Arial;
+    color: #eee !important;
+>>>>>>> origin/master
 }
 
-#requests{
-	background-color:#506EA2;
+p, label, i, b {
+    color: #eee !important;
 }
 
-#approved{
+.bluepage{
 	background-color:#506EA2;
 }
 
@@ -49,6 +40,29 @@ body {
     padding: 2%;
     width: 96% !important;
 }
+
+.ui-header {
+    background-color: #506EA2 !important;
+    border-bottom: 1px solid #eee;
+    border-top: none;
+}
+
+.ui-header .ui-btn {
+    background-color: transparent;
+    color: #eee !important;
+    border: none;
+}
+
+.ui-header .ui-btn span{
+    font-size: 20px;
+}
+
+.ui-header .ui-btn:hover {
+    color: #333;
+}
+
+
+.ui-body-c, .ui-overlay-c { text-shadow:0 0 0; }
 
 /* -----
 SVG Icon Matches

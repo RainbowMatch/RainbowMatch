@@ -11,12 +11,13 @@
             /*localStorage.userName = vm.user.userName;
             jQuery.mobile.navigate("#home");*/
             //##################################
-            
-            
+
+
             HttpService.post("http://k-keller.com:4080/Backend/api/users/login/",vm.user, function(event){
 
-                console.log(event);
-                if(event.id!=null){
+
+                console.log(event);//10.4.57.190
+                if(event.status==200){
                     localStorage.userName = vm.user.userName;
                     jQuery.mobile.navigate("#home");
                 }
