@@ -1,6 +1,6 @@
 (function() {
 
-    function MatchesViewController (HttpService){
+    function MatchesViewController (HttpService, $scope){
         var vm = this;
         vm.matches = [];
         vm.currentMatch = 0;
@@ -46,15 +46,10 @@
                 if ( xDiff > 0 ) {
 
                     vm.nextMatch();
-                }
-            } else {
-                if ( yDiff > 0 ) {
-                    /* up swipe */
-                } else {
-                    /* down swipe */
+                    $scope.$apply();
+                    console.log("swipe");
                 }
             }
-            /* reset values */
             xDown = null;
             yDown = null;
         };
