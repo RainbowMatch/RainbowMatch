@@ -4,14 +4,9 @@
 }
 
 
-<<<<<<< HEAD
-#profil{
-	background-color:#506EA2;
-=======
 body {
     font-family: 'FreeSans', 'Helvetica Neue', 'HelveticaNeue', 'Helvetica', 'Nimbus Sans L', Arial;
     color: #eee !important;
->>>>>>> origin/master
 }
 
 p, label, i, b {
@@ -140,11 +135,11 @@ $track-w: 16*$track-u;
 $track-h: .375em;
 $track-s: 100%;
 $track-l: 45%;
-$track-bg: linear-gradient(90deg, hsl(90, $track-s, $track-l), 
-  hsl(75, $track-s, $track-l), hsl(60, $track-s, $track-l), 
-  hsl(45, $track-s, $track-l), hsl(30, $track-s, $track-l), 
+$track-bg: linear-gradient(90deg, hsl(90, $track-s, $track-l),
+  hsl(75, $track-s, $track-l), hsl(60, $track-s, $track-l),
+  hsl(45, $track-s, $track-l), hsl(30, $track-s, $track-l),
   hsl(15, $track-s, $track-l), hsl(0, $track-s, $track-l));
-$track-lines: linear-gradient(90deg, 
+$track-lines: linear-gradient(90deg,
   $line-c $line-w, transparent $line-w) -$line-w/2 50%;
 
 $thumb-bg: #a7a6a2;
@@ -163,20 +158,20 @@ $ruler-c: #2c2c2b;
   border: solid 1px transparent;
   width: $track-u; height: $track-u;
   border-radius: 0;
-  transform: translateY(75%) 
-    rotate(30deg) skewY(30deg) scaleX(cos(30deg)); 
-  background: 
-    linear-gradient(135deg, $thumb-bg 25%, transparent 25%) content-box, 
+  transform: translateY(75%)
+    rotate(30deg) skewY(30deg) scaleX(cos(30deg));
+  background:
+    linear-gradient(135deg, $thumb-bg 25%, transparent 25%) content-box,
     linear-gradient(135deg, $line-c 25%, transparent 25%) border-box;
 }
 
 input[type='range'] {
-  &, 
-  &::-webkit-slider-runnable-track, 
+  &,
+  &::-webkit-slider-runnable-track,
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
   }
-  
+
   position: absolute;
   top: 50%; left: 50%;
   border: solid 0 transparent;
@@ -188,7 +183,7 @@ input[type='range'] {
   background: transparent;
   font-size: 1em;
   cursor: pointer;
-  
+
   &::-webkit-slider-runnable-track {
     position: relative;
     @include track();
@@ -201,9 +196,9 @@ input[type='range'] {
     @include track();
     color: transparent;
   }
-  
+
   &::-ms-fill-lower { display: none; }
-  
+
   &::-webkit-slider-thumb {
     margin-top: ($track-h - $track-u)/2;
     @include thumb();
@@ -214,7 +209,7 @@ input[type='range'] {
   &::-ms-thumb {
     @include thumb();
   }
-  
+
   &::-webkit-slider-runnable-track, /deep/ #track {
     &:before, &:after {
       position: absolute;
@@ -233,7 +228,7 @@ input[type='range'] {
       content: '10 11 12 13 14 15 16';
     }
   }
-  
+
   &:focus {
     outline: none;
     box-shadow: 0 0 .25em orange;
