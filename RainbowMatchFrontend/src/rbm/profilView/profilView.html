@@ -1,23 +1,25 @@
 <div data-role="header" data-position="fixed">
-    <a href="#home" class="ui-btn ui-corner-all "><span class="genericon genericon-previous "></span></a> 
+    <a href="#home" class="ui-btn ui-corner-all "><span class="genericon genericon-previous "></span></a>
     <p class="headtitle">rainbow match - profil</p>
 </div>
 <div data-role="main">
     <form>
         <label for="profilpasswordinput">Password</label>
-        <input type="password" name="profilpassword" ng-model="$ctrl.profil.password" id="profilpasswordinput"/>  
+        <input type="password" name="profilpassword" ng-model="$ctrl.profil.password" id="profilpasswordinput"/>
         <label for="profilreenterpasswordinput">Password</label>
-        <input type="password" name="profilreenterpassword" ng-model="$ctrl.profilRepassword" ng-change="$ctrl.repassword()" id="profilreenterpasswordinput"/>  
+        <input type="password" name="profilreenterpassword" ng-model="$ctrl.profilRepassword" ng-change="$ctrl.repassword()" id="profilreenterpasswordinput"/>
         <label for="profilplaceinput">Place</label>
         <input type="text" name="profilplace" ng-model="$ctrl.profil.place" id="profilplaceinput"/>
-        <label for="profilbirthdayinput">Birthday</label>  
+        <label for="profilbirthdayinput">Birthday</label>
         <input type="Date" placeholder="DD.MM.YYYY" ng-model="$ctrl.profil.birthday" data-inline="true" id="profilbirthdayinput"/>
         <label for="profilgenderinput" >Gender</label>
-        <input  type="range" name="profilgender" id="profilgenderinput" ng-model="$ctrl.profil.gender" min="0" max="100" value="50" /> 
+        <input  type="range" name="profilgender" id="profilgenderinput" ng-model="$ctrl.profil.gender" min="0" max="100" value="50" />
         <label>
         <input name="profilnonbinary" ng-model="$ctrl.profil.binary" type="checkbox">
         Non Binary
         </label>
+        <label for="nonBinaryInput">Non Binary</label>
+
         <label for="profilselectsexinput">Sexual Orientator</label>
         <select ng-undefined="$ctrl.profil.binary == false" name="profilselectsex" id="profilselectsexinput" ng-model="$ctrl.profil.sexuality" data-native-menu="true">
             <option value="choose-one" data-placeholder="true">Choose one...</option>
@@ -27,13 +29,13 @@
             <option value="4">Pansexual (attracted to all people, regardless of biological sex, gender identity, or expression)</option>
             <option value="5">Asexual (no sexual attraction, but often romantic or spiritual attractions exist)</option>
         </select>
-        <label for="profilcolorinput">Basic:</label>
+        <label for="profilcolorinput">Profile Colour:</label>
         <select name="profilcolor" id="profilcolorinput" ng-model="$ctrl.profil.color" data-native-menu="true">
             <option value="#ff0000">Red</option>
             <option value="#00ff00">Green</option>
             <option value="#0000ff">Blue</option>
             <option value="#ff00ff">Purple</option>
         </select>
-        <input type="button" ng-click="$ctrl.save()" data-inline="true" value="Save"/> 
+        <input type="button" ng-click="$ctrl.save()" data-inline="true" value="Save"/>
     </form>
 </div>
