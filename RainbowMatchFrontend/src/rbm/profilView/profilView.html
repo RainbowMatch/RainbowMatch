@@ -1,5 +1,5 @@
 <div data-role="header" data-position="fixed">
-    <a href="#home" class="ui-btn ui-corner-all ">Back</a> 
+    <a href="#home" class="ui-btn ui-corner-all "><span class="genericon genericon-previous "></span></a> 
     <p class="headtitle">rainbow match - profil</p>
 </div>
 <div data-role="main">
@@ -19,16 +19,16 @@
         Non Binary
         </label>
         <label for="profilselectsexinput">Sexual Orientator</label>
-        <select name="profilselectsex" id="profilselectsexinput" ng-model="$ctrl.profil.sexuality" data-native-menu="false">
-            <option value="choose-one" data-placeholder="true" data-iconpos="left">Choose one...</option>
-            <option value="1">Androsexual(attracted to males, men, and/or masculinity)</option>
-            <option value="2">Gynesexual(attracted to females, women, and/or femininity)</option>
-            <option value="3">Skoliosexual(attracted to genderqueer and transsexual people and expressions)</option>
-            <option value="4">Pansexual(attracted to all people, regardless of biological sex, gender identity, or expression)</option>
-            <option value="5">Asexual(no sexual attraction, but often romantic or spiritual attractions exist)</option>
+        <select ng-undefined="$ctrl.profil.binary == false" name="profilselectsex" id="profilselectsexinput" ng-model="$ctrl.profil.sexuality" data-native-menu="true">
+            <option value="choose-one" data-placeholder="true">Choose one...</option>
+            <option value="1">Androsexual (attracted to males, men, and/or masculinity)</option>
+            <option value="2">Gynesexual (attracted to females, women, and/or femininity)</option>
+            <option value="3">Skoliosexual (attracted to genderqueer and transsexual people and expressions)</option>
+            <option value="4">Pansexual (attracted to all people, regardless of biological sex, gender identity, or expression)</option>
+            <option value="5">Asexual (no sexual attraction, but often romantic or spiritual attractions exist)</option>
         </select>
         <label for="profilcolorinput">Basic:</label>
-        <select name="profilcolor" id="profilcolorinput" ng-model="$ctrl.profil.color" data-native-menu="false">
+        <select name="profilcolor" id="profilcolorinput" ng-model="$ctrl.profil.color" data-native-menu="true">
             <option value="#ff0000">Red</option>
             <option value="#00ff00">Green</option>
             <option value="#0000ff">Blue</option>

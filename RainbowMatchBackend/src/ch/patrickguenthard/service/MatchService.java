@@ -3,7 +3,6 @@ package ch.patrickguenthard.service;
 import java.util.List;
 
 import ch.patrickguenthard.entity.Match;
-import ch.patrickguenthard.entity.User;
 
 public interface MatchService {
 	public List<Match> listRequestedByUser(Long userId);

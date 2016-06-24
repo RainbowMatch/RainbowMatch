@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./ext/jqm/jquery.mobile-1.4.5.min.css"/>
         <link rel="stylesheet" href="./ext/fonts/freesans/fonts.css"/>
+        <link rel="stylesheet" href="./ext/genericons/genericons.css"/>
         <link rel="stylesheet" href="stylesheets.css">
     </head>
     <body ng-controller="RainbowMatchController">
@@ -15,26 +16,29 @@
             </div>
         </div>
 
-        <div data-role="page" id="login">
+        <div data-role="page" class="bluepage" id="login">
             <login-view></login-view>
         </div>
-        <div data-role="page" id="signup">
+        <div data-role="page" class="bluepage" id="signup">
             <signup-view></signup-view>
         </div>
-        <div data-role="page" id="home">
+        <div data-role="page" class="bluepage" id="home">
             <home-view></home-view>
         </div>
-        <div data-role="page" id="matches">
+        <div data-role="page" class="bluepage" id="matches">
             <matches-view></matches-view>
         </div>
-        <div data-role="page" id="profil">
+        <div data-role="page" class="bluepage" id="profil">
             <profil-view></profil-view>
         </div>   
-        <div data-role="page" id="requests">
+        <div data-role="page" class="bluepage" id="requests">
             <request-view></request-view>
         </div> 
-        <div data-role="page" id="approved">
+        <div data-role="page" class="bluepage" id="approved">
             <aproved-view></aproved-view>
+        </div>
+        <div data-role="page" class="bluepage">
+            <about-view></about-view>
         </div>
 
 
@@ -47,6 +51,7 @@
         <script src="cordova.js"></script>
         <script src="rbm/rbm.js"></script>
         <script src="rbm/rbm.controller.js"></script>
+        <script src="rbm/rbm.constants.js"></script>
         <script src="rbm/service/httpService.js"></script>
         <script src="rbm/loginView/loginView.component.js"></script>
         <script src="rbm/signupView/signupView.component.js"></script>
@@ -55,5 +60,6 @@
         <script src="rbm/profilView/profilView.component.js"></script>
         <script src="rbm/requestView/requestView.component.js"></script>
         <script src="rbm/aprovedView/aprovedView.component.js"></script>
+        <script src="rbm/aboutView/aboutView.component.js"></script>
     </body>
 </html>

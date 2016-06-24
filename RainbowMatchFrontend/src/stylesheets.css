@@ -1,33 +1,19 @@
+* {
+    text-shadow: none !important;
+
+}
+
+
 body {
     font-family: 'FreeSans', 'Helvetica Neue', 'HelveticaNeue', 'Helvetica', 'Nimbus Sans L', Arial;
-    text-shadow: none;
+    color: #eee !important;
 }
 
-#home{
-	background-color:#506EA2;
+p, label, i, b {
+    color: #eee !important;
 }
 
-#signup{
-	background-color:#506EA2;
-}
-
-#login{
-	background-color:#506EA2;
-}
-
-#matches{
-	background-color:#506EA2;
-}
-
-#profile{
-	background-color:#506EA2;
-}
-
-#requests{
-	background-color:#506EA2;
-}
-
-#approved{
+.bluepage{
 	background-color:#506EA2;
 }
 
@@ -49,6 +35,29 @@ body {
     padding: 2%;
     width: 96% !important;
 }
+
+.ui-header {
+    background-color: #506EA2 !important;
+    border-bottom: 1px solid #eee;
+    border-top: none;
+}
+
+.ui-header .ui-btn {
+    background-color: transparent;
+    color: #eee !important;
+    border: none;
+}
+
+.ui-header .ui-btn span{
+    font-size: 20px;
+}
+
+.ui-header .ui-btn:hover {
+    color: #333;
+}
+
+
+.ui-body-c, .ui-overlay-c { text-shadow:0 0 0; }
 
 /* -----
 SVG Icon Matches

@@ -2,10 +2,11 @@
 
     function MatchesViewController (HttpService){
         var vm = this;
-        var vm.matches = [];
-        var vm.currentMatch = 0;
+        vm.matches = [];
+        vm.currentMatch = 0;
         
         vm.loadMatches = function() {
+            console.log(RainbowMatch.baseUrl + "api/users/users");
             HttpService.get(RainbowMatch.baseUrl + "api/users/users", function(data){
                 for(var i in data.data) {
                     var usr = data.data[i]
@@ -18,7 +19,7 @@
         };
         
         vm.requestApproval = function() {
-        
+            
         }
         
         vm.loadMatches();
