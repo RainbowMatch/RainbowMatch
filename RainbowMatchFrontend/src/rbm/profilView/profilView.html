@@ -13,21 +13,21 @@
         <label for="profilbirthdayinput">Birthday</label>
         <input type="Date" placeholder="DD.MM.YYYY" ng-model="$ctrl.profil.birthday" data-inline="true" id="profilbirthdayinput"/>
         <label for="profilgenderinput" >Gender</label>
-        <input  type="range" name="profilgender" id="profilgenderinput" ng-model="$ctrl.profil.gender" min="0" max="100" value="50" /> 
+        <input  type="range" name="profilgender" id="profilgenderinput" ng-model="$ctrl.profil.gender" min="0" max="100" value="50" />
 
         <label>
-        <input name="profilnonbinary" ng-model="$ctrl.profil.binary" type="checkbox">
+        <input name="profilnonbinary" ng-model="$ctrl.profil.nonBinaryGender" type="checkbox">
         Non Binary
         </label>
         <label for="nonBinaryInput">Non Binary</label>
-        <select ng-show="$ctrl.profil.binary" id="nonBinaryInput" data-native-menu="true">
+        <select ng-show="$ctrl.profil.nonBinaryGenderId" id="nonBinaryInput" data-native-menu="true">
           <option ng-repeat="g in $ctrl.nbg" value="{{g.nonBinaryGenderId}}">{{g.genderDescription}}</option>
         </select>
 
         <label for="profilselectsexinput">Sexual Orientator</label>
         <select  name="profilselectsex" id="profilselectsexinput" ng-model="$ctrl.profil.sexuality" data-native-menu="true">
             <option value="choose-one" data-placeholder="true">Choose one...</option>
-            <option ng-repeat="o in $ctrl.sor" value="o.sexualOrientationId">{{o.orientationDescription}}</option>
+            <option ng-repeat="o in $ctrl.sor" value="{{o.sexualOrientationId}}">{{o.orientationDescription}}</option>
         </select>
         <label for="profilcolorinput">Profile Colour:</label>
         <select name="profilcolor" id="profilcolorinput" ng-model="$ctrl.profil.color" data-native-menu="true">

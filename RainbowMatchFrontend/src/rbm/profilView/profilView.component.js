@@ -38,7 +38,19 @@
             repassword = vm.profil.password === vm.profilRepassword;
         }
         vm.save = function(){
-            HttpService.post(RainbowMatch.baseUrl + "api/");
+            HttpService.post(RainbowMatch.baseUrl + "api/profile/update", {
+              birthday : vm.profil.birthday,
+              gender : vm.profil.gender /100,
+              nonBinaryGender : vm.profil.nonBinaryGender,
+              nonBinaryGenderId : vm.profil.nonBinaryGenderId,
+              //sexualOrientationId : vm.profil.sexuality,
+              //color : vm.profil.color,
+              biography : "",
+              profilePicture : ""
+
+            }, function(dat){
+              console.log(dat);
+            });
         }
     }
 
