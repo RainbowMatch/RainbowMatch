@@ -5,6 +5,7 @@ import java.util.List;
 
 import ch.patrickguenthard.dataaccess.DataAccessConnectionInitiator;
 import ch.patrickguenthard.dataaccess.DataAccessManager;
+import ch.patrickguenthard.entity.Profile;
 import ch.patrickguenthard.entity.User;
 import ch.patrickguenthard.exceptions.UnsupportedException;
 import ch.patrickguenthard.exceptions.UserException;
@@ -18,19 +19,30 @@ public class UserServiceImpl implements UserService{
 
     private DataAccessManager<User> dam;
     private Logger LOG = new Logger(UserServiceImpl.class.getName());
+    private ProfileService profileService;
+    
     
     public UserServiceImpl() {
-	dam = new DataAccessManager<User>(DataAccessConnectionInitiator.getInstance().getConnection());
+    	dam = new DataAccessManager<User>(DataAccessConnectionInitiator.getInstance().getConnection());
+    	profileService = new ProfileServiceImpl();
     }
 	
     @Override
     public void addUser(User user) throws UnsupportedException{
-	try {
-	    user.setUserPassword(HashingUtil.SHAsum(user.getUserPassword().getBytes()));
-	} catch (NoSuchAlgorithmException e) {
-	    e.printStackTrace();
-	}
-	dam.persist(user);
+		try {
+		    user.setUserPassword(HashingUtil.SHAsum(user.getUserPassword().getBytes()));
+		} catch (NoSuchAlgorithmException e) {
+		    e.printStackTrace();
+		}
+		Long userId = dam.persist(user);
+		Profile prof = new Profile();
+		prof.setUserId(userId);
+		prof.setBiography("");
+		prof.setGender(0f);
+		prof.setNonBinaryGender(false);
+		prof.setNonBinaryGenderId(-1L);
+		prof.setProfilePicture("");
+		profileService.addProfile(prof);
     }
 	
     @Override
