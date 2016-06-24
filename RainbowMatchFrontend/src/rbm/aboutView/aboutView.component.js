@@ -2,9 +2,9 @@
 
     function HomeViewController (){
         var vm = this;
-        
+
         vm.logout = function() {
-            document.localStorage.userName = undefined;
+            localStorage.userName = undefined;
             jQuery.mobile.navigate("#login");
         };
     }

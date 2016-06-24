@@ -46,11 +46,9 @@
                 if ( xDiff > 0 ) {
 
                     vm.nextMatch();
-<<<<<<< HEAD
-=======
                     $scope.$apply();
                     console.log("swipe");
->>>>>>> 5510fdceea9913a83e961822a31bd2ea906bce61
+
                 }
             }
             xDown = null;
