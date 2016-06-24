@@ -8,9 +8,15 @@
             userName : "",
             userPassword : ""
         }
+
+        // checks if passwords are equal
         vm.repassword = function(){
             repassword = vm.user.userPassword === vm.userRepassword;
         }
+
+        /**
+         * this method handles the sign up of users
+         */
         vm.signup = function(){
             if(vm.user.userName.length < 2){
                 alert("Username at least 2 characters long!");

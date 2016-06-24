@@ -9,6 +9,11 @@ import ch.patrickguenthard.entity.User;
 import ch.patrickguenthard.entity.UserDetail;
 import ch.patrickguenthard.entity.UserRole;
 
+/**
+ * This class is a helper-class for ch.patrickguenthard.dataaccess.DataAccessManager
+ * @author Patrick
+ *
+ */
 public class EntityFactory {
 	public static BaseEntity createEmptyEntity(Class clss){
 		if(clss.equals(User.class)){

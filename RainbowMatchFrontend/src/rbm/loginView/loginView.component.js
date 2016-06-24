@@ -13,6 +13,10 @@
             //##################################
 
 
+            /**
+             * sends login request yi server. if the http status is 200, the login name is stored
+             * in the localStorage and the page redirects to the home view
+             */
             HttpService.post(RainbowMatch.baseUrl+"api/users/login/",vm.user, function(event){
 
 

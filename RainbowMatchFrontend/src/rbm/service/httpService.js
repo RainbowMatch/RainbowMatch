@@ -1,11 +1,14 @@
+/**
+ * this service handles http requests. post and get methods are supported
+ */
 angular.module("rbm").factory("HttpService", function($http){
     function _get(url,fullCallback) {
-	$http.get(url).then(function(evt){
-	    // '!=' used because should react the same if null
-	    if(fullCallback != undefined) {
-		fullCallback(evt);
-	    }
-	});
+      $http.get(url).then(function(evt){
+        // '!=' used because should react the same if null
+        if(fullCallback != undefined) {
+          fullCallback(evt);
+        }
+      });
     }
 
     function _post(url,data,fullCallback) {
@@ -20,12 +23,12 @@ angular.module("rbm").factory("HttpService", function($http){
             fullCallback(evt);
             }
         });
-        
-        
+
+
     }
 
     return {
-	get:_get,
-	post:_post
+    	get:_get,
+    	post:_post
     };
 });

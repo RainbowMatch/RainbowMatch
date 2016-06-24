@@ -4,7 +4,10 @@
         var vm = this;
         var profilRepassword = "";
         var repassword = false;
-        vm.userName = "User";
+
+        /**
+         * select all entries in the TBAE_NON_BINARY_GENDER table.
+         */
         vm.nbg;
         HttpService.get(RainbowMatch.baseUrl + "api/profile/nbgender/all", function(dat) {
           if(dat.status === 200) {
@@ -14,7 +17,9 @@
           }
         });
 
-
+        /**
+         * select all entries in the TBAE_SEXUAL_ORIENTATION table.
+         */
         vm.sor = [];
         HttpService.get(RainbowMatch.baseUrl + "api/profile/sorientation/all", function(dat) {
           if(dat.status === 200) {

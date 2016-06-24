@@ -13,6 +13,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * This class represents a 1 : 1 relation to the User class. The reason for this split was the thought of reusing parts of this application
+ * @author Patrick
+ *
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

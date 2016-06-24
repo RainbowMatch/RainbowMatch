@@ -5,6 +5,11 @@
         vm.matches = [];
         vm.currentMatch = 0;
 
+        /**
+         * this method loads a list of all users and maps it to the related profile infos.
+         * In this version all users are loaded. In a future release a filtered list for
+         * specific matches will be loaded
+         */
         vm.loadMatches = function() {
             console.log(RainbowMatch.baseUrl + "api/users/users");
             HttpService.get(RainbowMatch.baseUrl + "api/users/users", function(data){
@@ -20,6 +25,10 @@
                 }
             });
         };
+
+        /**
+         * handlers for touch event
+         */
         document.addEventListener('touchstart', handleTouchStart, false);
         document.addEventListener('touchmove', handleTouchMove, false);
 
@@ -56,7 +65,9 @@
         };
 
 
-
+        /**
+         * selects next match. after the last user is selected, the first user will be returned.
+         */
         vm.nextMatch = function() {
           if(vm.currentMatch < vm.matches.length - 1) {
             vm.currentMatch++;
