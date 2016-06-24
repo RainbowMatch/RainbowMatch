@@ -1,6 +1,6 @@
 (function() {
 
-    function MatchesViewController (HttpService){
+    function MatchesViewController (HttpService, $scope){
         var vm = this;
         vm.matches = [];
         vm.currentMatch = 0;
@@ -46,9 +46,13 @@
                 if ( xDiff > 0 ) {
 
                     vm.nextMatch();
+<<<<<<< HEAD
+=======
+                    $scope.$apply();
+                    console.log("swipe");
+>>>>>>> 5510fdceea9913a83e961822a31bd2ea906bce61
                 }
             }
-            /* reset values */
             xDown = null;
             yDown = null;
         };
