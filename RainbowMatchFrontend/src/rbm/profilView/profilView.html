@@ -13,21 +13,24 @@
         <label for="profilbirthdayinput">Birthday</label>
         <input type="Date" placeholder="DD.MM.YYYY" ng-model="$ctrl.profil.birthday" data-inline="true" id="profilbirthdayinput"/>
         <label for="profilgenderinput" >Gender</label>
+<<<<<<< HEAD
+        <input  type="range" name="profilgender" id="profilgenderinput" ng-model="$ctrl.profil.gender" min="0" max="100" value="50" /> 
+=======
         <input  type="range" name="profilgender" id="profilgenderinput" ng-model="$ctrl.profil.gender" min="0" max="100" value="50" />
+>>>>>>> 009847e47e628a48220e74c01766c828f9200a62
         <label>
         <input name="profilnonbinary" ng-model="$ctrl.profil.binary" type="checkbox">
         Non Binary
         </label>
         <label for="nonBinaryInput">Non Binary</label>
+        <select ng-show="$ctrl.profil.binary" id="nonBinaryInput" data-native-menu="true">
+          <option ng-repeat="g in $ctrl.nbg" value="{{g.nonBinaryGenderId}}">{{g.genderDescription}}</option>
+        </select>
 
         <label for="profilselectsexinput">Sexual Orientator</label>
-        <select ng-undefined="$ctrl.profil.binary == false" name="profilselectsex" id="profilselectsexinput" ng-model="$ctrl.profil.sexuality" data-native-menu="true">
+        <select  name="profilselectsex" id="profilselectsexinput" ng-model="$ctrl.profil.sexuality" data-native-menu="true">
             <option value="choose-one" data-placeholder="true">Choose one...</option>
-            <option value="1">Androsexual (attracted to males, men, and/or masculinity)</option>
-            <option value="2">Gynesexual (attracted to females, women, and/or femininity)</option>
-            <option value="3">Skoliosexual (attracted to genderqueer and transsexual people and expressions)</option>
-            <option value="4">Pansexual (attracted to all people, regardless of biological sex, gender identity, or expression)</option>
-            <option value="5">Asexual (no sexual attraction, but often romantic or spiritual attractions exist)</option>
+            <option ng-repeat="o in $ctrl.sor" value="o.sexualOrientationId">{{o.orientationDescription}}</option>
         </select>
         <label for="profilcolorinput">Profile Colour:</label>
         <select name="profilcolor" id="profilcolorinput" ng-model="$ctrl.profil.color" data-native-menu="true">
